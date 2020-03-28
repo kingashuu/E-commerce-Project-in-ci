@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+
+Template Name: Freak Ecommerce Responsive Bootstrap Template
+Template URI: http://bootexperts.com
+Description: This is html5 template
+Author: BootExperts
+Author URI: http://bootexperts.com
+Version: 1.0
+
+Note: This core style file includes all external plugins css file.
+
+-------------------------------------------------------------------------------*/
+
+@import url("material-design-iconic-font.min.css");
+@import url("plugins/animate.css");
+@import url("plugins/slick.css");
+@import url("plugins/jquery-ui.min.css");
+@import url("plugins/meanmenu.min.css");
+@import url("plugins/nivo-slider.css");
+@import url("plugins/owl.carousel.css");
+@import url("plugins/venobox.css");
+@import url("shortcode/default.css");

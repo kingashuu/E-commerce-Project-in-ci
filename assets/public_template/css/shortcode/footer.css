@@ -1,0 +1,227 @@
+/* -----------------------------------
+Template Name: Freak Ecommerce Responsive Bootstrap Template
+Template URI: http://bootexperts.com
+Description: This is html5 template
+Author: BootExperts
+Author URI: http://bootexperts.com
+Version: 1.0
+
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+
+
+.toggle-footer li {
+  position: relative;
+}
+.toggle-footer i {
+  border: 2px solid #74797f;
+  border-radius: 100%;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  height: 35px;
+  left: 0;
+  line-height: 31px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 35px;
+}
+.toggle-footer li p {
+  margin: 0;
+  font-family: Roboto;
+}
+.footer-menu li:first-child a {
+  padding-top: 0;
+}
+.footer-menu li a:hover {
+  color: #01A6A9;
+}
+.footer-menu li a {
+  display: block;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #3F3F3F;
+}
+.footer-menu li a i {
+  margin-right: 5px;
+}
+.footer-social-icon li a {
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  display: block;
+}
+.footer-social-icon li {
+  display: inline-block;
+}
+.footer-social-icon li a:hover {
+  background: #01a6a9 none repeat scroll 0 0;
+  border-color: #01a6a9;
+  color: #ffffff !important;
+}
+.footer-social-icon li:last-child {
+  margin: 0;
+}
+.footer-social-icon li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.copyright > p {
+  margin: 0;
+  line-height: 30px;
+}
+.copyright a {
+  color: #01a6a9;
+}
+.copyright a:hover {
+  color: #fff;
+}
+.footer-img {
+  float: right;
+}
+footer.footer-area {
+  margin-top: -57.5px;
+}
+.footer-top-area {
+  padding-top: 132.5px;
+  padding-bottom: 80px;
+}
+.footer-top-area p {
+  font-family: Roboto;
+}
+/* Footer Two css */
+.default-bg .toggle-footer i {
+  border: 2px solid #fff;
+}
+.default-bg .footer-menu li a {
+  border-bottom: 1px solid #333;
+}
+.default-bg .footer-menu li a:hover {
+  color: #333333 !important;
+}
+.default-bg .footer-social-icon li a:hover {
+  background: #333 none repeat scroll 0 0;
+  border-color: #333;
+}
+/* footerThree css */
+.footer-area-3 {
+  background: rgba(0, 0, 0, 0) url("../../images/bg/footer-main-bg.jpg") no-repeat scroll center center / cover ;
+}
+.footer-area-3 p, .footer-area-3 a {
+  color: #a6abb3;
+}
+.widget-title {
+  color: #fff;
+  font-size: 17px;
+  margin: 15px 0 28px;
+  text-transform: uppercase;
+}
+.email > a , .tweet-text > a{
+  color: #01a6a9;
+}
+.email > a:hover , .tweet-text > a:hover, .global-cell > a:hover {
+  text-decoration: underline;
+}
+.social-icon-2 ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-area-3 a:hover{
+  color: #01a6a9;
+}
+.social-icon-2 ul li:last-child {
+  margin: 0;
+}
+.social-icon-2 ul li a {
+  background: #242628 none repeat scroll 0 0;
+  border: 1px solid #4d535b;
+  color: rgba(255, 255, 255, 0.39);
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+.social-icon-2 ul li:hover a {
+  color: #ffffff !important;
+}
+.social-icon-2 ul li .facebook:hover {
+  background: #314a87 none repeat scroll 0 0;
+  border-color: #314a87;
+}
+.social-icon-2 ul li .twitter:hover {
+  background: #22BBF4 none repeat scroll 0 0;
+  border-color: #22BBF4;
+}
+.social-icon-2 ul li .dribble:hover {
+  background: #D842A1 none repeat scroll 0 0;
+  border-color: #D842A1;
+}
+
+.social-icon-2 ul li .g-plus:hover {
+  background: #DA2C2C none repeat scroll 0 0;
+  border-color: #DA2C2C;
+}
+.menu-information-container ul li {
+  line-height: 34px;
+}
+.widget-latest-tweet li::before {
+  color: #2395ec;
+}
+.widget-latest-tweet li::before {
+  color: #2395ec;
+  content: "";
+  font-family: material-design-iconic-font;
+  font-size: 25px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+}
+.widget-latest-tweet li {
+  margin-bottom: 35px;
+  padding-left: 40px;
+  position: relative;
+}
+.inst-photo img {
+  width: 100%;
+}
+.inst-photo > li {
+  float: left;
+  width: 33.33%;
+}
+.ins-follow-btn {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+.ins-follow-btn > a {
+  color: #fff;
+}
+.ins-follow-btn i {
+  margin-right: 10px;
+}
+.inst-photo {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.footer-bottom .copyright a {
+  color: #01a6a9;
+}
+.footer-bottom .copyright a:hover {
+  color: #a6abb3;
+}
+.header-area-2 .main-menu > li:last-child a {
+  padding-right: 0;
+}
+
+
+
+
+
+

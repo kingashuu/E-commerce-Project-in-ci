@@ -1,0 +1,2041 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Freak Ecommerce Responsive Bootstrap Template
+    Template URI: http://bootexperts.com
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+  CSS INDEX
+  ===================
+  1. Theme Default CSS (css/shortcode/default.css)
+  2. Header CSS (css/shortcode/header.css)
+  3. Slider CSS (css/shortcode/slider.css)
+  4. Footer CSS (css/shortcode/footer.css)
+  5. Google Fonts
+  6. Custom-content all
+    6.1 Call to action
+    6.2 breadcrumb style
+    6.3 Custom-content all
+  7. Home Page css 
+    7.1 Banner css
+    7.2 roduct List Area CSS
+    7.3 Support Area CSS
+    7.4 Testimonial Area CSS
+    7.5 Blog CSS
+    7.6 Brand CSS
+  8. Breadcrumbs Area CSS  
+  9. Shop Page CSS
+    9.1 Shop View
+    9.2 Shop Left Side Bar CSS
+    9.3 Treeeview Css
+    9.4 Price Slider CSS
+    9.5 color css
+  10. Product Details Page CSS  
+    10.1 Related Product css
+  11. Cart Page CSS  
+  12. Checkout Page CSS
+  13. Contact Page css
+  14. Quick View css
+  15. 404 page css
+  16. Blog Details Page css
+  17. Blog Two Page css
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  5. Google Fonts
+/*----------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,500,600,700|Roboto:300,400,500,700';
+
+/*----------------------------------------*/
+/*  6. Custom-content all
+/*----------------------------------------*/
+.single-promo i{
+  color: #00a9da;
+  display: block;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.single-promo h3 {
+  padding-bottom: 15px;
+  position: relative;
+}
+.single-promo h3::before {
+  background: #00a9da none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 70px;
+}
+.single-promo.text-center h3::before {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.single-promo.text-right h3::before {
+  left: auto;
+  right: 0;
+}
+/*----------------------------------------*/
+/*  6.1 Call to action
+/*----------------------------------------*/
+.action-box-button a.button span {
+  font-size: 13px;
+  padding: 11px 12px;
+}
+/*----------------------------------------*/
+/*  6.2 breadcrumb style
+/*----------------------------------------*/
+.breadcrumb-list > li {
+  display: inline-block;
+  float: none;
+  margin-left: 22px;
+  position: relative;
+}
+.breadcrumb-list > li::after {
+  color: #ffffff;
+  content: "/";
+  left: -14px;
+  position: absolute;
+  top: 2px;
+}
+.breadcrumb-list > li:first-child {
+  margin-left: 0;
+}
+.breadcrumb-list > li:first-child::after {
+  content: "";
+}
+.breadcrumb-list > li > a {
+  color: #ffffff;
+}
+/*----------------------------------------*/
+/*  6.3 Custom-content all  
+/*----------------------------------------*/
+.boxed-layout .wrapper {
+    box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+    margin: auto;
+    position: relative;
+    width: 1240px;
+}
+.boxed-layout .sticky {
+    left: auto;
+    margin: auto;
+    width: 1240px;
+}
+/*----------------------------------------*/
+/*  7 Home Page CSS
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*  7.1 Banner css
+/*----------------------------------------*/
+.banner-img {
+  position: relative;
+}
+.banner-hover > a::before {
+  background-color: rgba(0, 0, 0, 0.15);
+  content: "";
+  height: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+}
+.banner-hover:hover > a::after, .banner-hover:hover > a::before {
+  height: 100%;
+  transition: all 0.4s ease-out 0s;
+  width: 100%;
+}
+.banner-hover > a::after {
+  background-color: rgba(0, 0, 0, 0.15);
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+}
+.banner-img > a {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+.shop-cart-icon a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  height: 60px;
+  left: 50%;
+  line-height: 64px;
+  margin-left: -30px;
+  margin-top: -30px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 60px;
+  z-index: 99;
+}
+.banner-img:hover .shop-cart-icon a {
+  opacity: 1;
+}
+/*----------------------------------------*/
+/*  7.2 roduct List Area CSS
+/*----------------------------------------*/
+.tab-menu {
+  float: left;
+}
+.tab-menu ul.nav-tabs {
+  border: medium none;
+  margin-bottom: 10px;
+}
+.tab-menu ul.nav-tabs > li a {
+  color: #353535;
+  cursor: pointer;
+  float: left;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.tab-menu ul.nav-tabs li.first-item a {
+  margin-left: 0;
+}
+.nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.tab-menu ul.nav-tabs > li.active > a, .tab-menu ul.nav-tabs > li.active > a:focus, .tab-menu ul.nav-tabs > li.active > a:hover {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #01a6a9;
+  cursor: pointer;
+}
+.tab-menu ul.nav-tabs > li > a {
+  border: medium none;
+  margin: 0 17px;
+}
+.tab-menu ul.nav-tabs li:last-child a {
+  margin-right: 0;
+}
+.new-label {
+  border: 1px dotted #01a6a9;
+  border-radius: 50%;
+  color: #01a6a9;
+  font-size: 18px;
+  font-weight: 600;
+  height: 56px;
+  line-height: 56px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 10px;
+  width: 56px;
+}
+.red-color {
+  border: 1px solid red;
+  color: red;
+}
+.product-img-content {
+  position: relative;
+}
+.rating-icon i {
+  color: #fac62a;
+}
+.product-content a {
+  color: #252525;
+  font-weight: 500;
+}
+.product-content a:hover {
+  color: #01a6a9;
+}
+.single-product:hover .product-img img {
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.13);
+}
+.product-img img {
+  transition: all 0.4s ease 0s;
+  width: 100%;
+}
+.product-img a::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 10px;
+  content: "";
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: scale(0);
+  transition: all 300ms ease 0s;
+}
+.product-img a {
+  display: block;
+  position: relative;
+}
+.single-product:hover .product-img a:before {
+  transform: scale(1);
+}
+.product-action {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0;
+  padding: 5px 0;
+  position: absolute;
+  right: 0;
+  top: 68%;
+  transform: scale(1);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 85%;
+}
+.product-action a {
+  border-right: 1px solid #ddd;
+  color: #252525;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 30px;
+  text-align: center;
+}
+.product-action a:first-child {
+  padding-left: 0;
+}
+.product-action a:last-child {
+  border-right: medium none;
+  padding-right: 0;
+}
+.single-product:hover .product-action {
+  margin-top: -70px;
+  opacity: 1;
+  visibility: visible;
+}
+.product-price span{
+  font-weight: 500;
+}
+.new-price {
+  color: #252525;
+  font-size: 18px;
+}
+.old-price {
+  color: #909090;
+  text-decoration: line-through;
+}
+.product-action a:hover {
+  color: #01a6a9;
+}
+/*----------------------------------------*/
+/*  7.3 Support Area CSS
+/*----------------------------------------*/
+.service-area {
+  background: rgba(0, 0, 0, 0) url("images/support.jpg") no-repeat fixed center center / cover ;
+}
+.service-area .single-item i {
+  border: 1px solid #01a6a9;
+  border-radius: 50%;
+  color: #fefefe;
+  font-size: 36px;
+  height: 76px;
+  left: 25px;
+  line-height: 76px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 76px;
+  transition: .4s;
+}
+.single-item:hover i {
+  background: #01a6a9;
+}
+.service-area .single-item {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.single-item p {
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+}
+.single-item h4 {
+  margin-bottom: 15px;
+}
+.sale-img img {
+  width: 100%;
+}
+.sinlge-sale .old-price {
+  color: #252525;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.sale-img > a {
+  display: block;
+  position: relative;
+}
+.sale-img > a::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 5px;
+  content: "";
+  left: 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+}
+.sale-img:hover a::before {
+  transform: scale(1);
+  visibility: visible;
+}
+.sale-img {
+  position: relative;
+}
+.sale-shop > a {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  bottom: 0;
+  color: #fff;
+  height: 40px;
+  left: 0;
+  line-height: 40px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transform: translate(0%, 0%) scale(0, 0);
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 40px;
+}
+.sale-img:hover .sale-shop > a {
+  transform: translate(0%, 0%) scale(1, 1);
+  visibility: visible;
+}
+.offer-banner img {
+  width: 100%;
+}
+.product-cuntdown {
+  bottom: 125px;
+  height: 100px;
+  left: 0;
+  opacity: 0.9;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.offer-banner {
+  position: relative;
+}
+.product-cuntdown .cdown {
+  border: 1px solid #909090;
+  color: #252525;
+  display: inline-block;
+  height: 58px;
+  margin-left: 25px;
+  text-align: center;
+  width: 58px;
+  z-index: 9;
+}
+.product-cuntdown .cdown:first-child {
+  margin: 0;
+}
+.cdown p {
+  color: #252525;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+.time-count {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+/*----------------------------------------*/
+/*  7.4 Testimonial Area CSS
+/*----------------------------------------*/
+.testimonial-area #particles-js {
+  background: rgba(0, 0, 0, 0) url("images/testimonial/bg.jpg") no-repeat scroll center center / cover ;
+  position: relative;
+  width: 100%;
+}
+#particles-js canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+}
+.testimonial-list {
+  z-index: 99;
+}
+.testimonial-title h4 {
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+  margin: 0;
+}
+.testimonial-title h4:before {
+  position: absolute;
+  content: "";
+  background: #01A6A9;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  width: 58px;
+}
+.testimonial-info {
+  padding: 50px 80px;
+}
+.single-testimonial > img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 102px;
+  margin-bottom: -51px;
+  width: 102px;
+}
+.testimonial-info {
+  padding: 70px 80px 40px;
+  border-radius: 3px;
+}
+.testimonial-info > p {
+  margin: 0;
+  color: #606060;
+  position: relative;
+}
+.testimonial-info > p::before {
+  color: #AAAAAA;
+  content: "";
+  font-size: 30px;
+  left: -5px;
+  position: absolute;
+  top: -8px;
+  font-family: material-design-iconic-font;
+  transform: rotate(180deg);
+}
+.testimonial-info > p::after {
+  bottom: -8px;
+  color: #aaaaaa;
+  content: "";
+  font-family: material-design-iconic-font;
+  font-size: 30px;
+  position: absolute;
+  right: 185px;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 20px;
+  height: 10px;
+  opacity: 1;
+  width: 10px;
+  margin: 0 5px; 
+}
+.owl-theme .owl-controls .owl-page.active span {
+  background: #01A6A9 none repeat scroll 0 0;
+}
+/*----------------------------------------*/
+/*  7.5 Blog CSS
+/*----------------------------------------*/
+.blog-image img {
+  width: 100%;
+}
+.blog-content {
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.blog-content-overlay{
+  border: 1px solid #ddd
+}
+.single-blog {
+  position: relative;
+}
+.blog-content-overlay {
+  background: #fff none repeat scroll 0 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  padding-bottom: 22px;
+}
+.single-blog:hover .blog-content-overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+.blog-content h5 a {
+  color: #333;
+  font-family: Montserrat;
+}
+.blog-content h5 a:hover {
+  color: #01a6a9;
+}
+/*----------------------------------------*/
+/*  7.6 Brand CSS
+/*----------------------------------------*/
+.single-brand {
+  border: 1px solid #dcdcdb;
+  border-radius: 3px;
+  padding: 13px 0;
+  transition: all 0.3s ease 0s;
+}
+.single-brand:hover {
+  border-color: #01a6a9;
+}
+.newsletter-title h4 {
+  font-weight: 600;
+  margin: 0;
+  line-height: 36px;
+}
+.news-form input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color #ffffff;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  color: #dddddd;
+  width: 65%;
+}
+.news-form input:focus {
+  border-color: #ffffff;
+  border-width: 0 0 2px;
+}
+.news-form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.news-form button {
+  background: #ffffff none repeat scroll 0 0;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  color: #01a6a9;
+  font-weight: 600;
+  height: 36px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  width: 128px;
+}
+.news-form button:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+/*----------------------------------------*/
+/*  8. Breadcrumbs Area CSS
+/*----------------------------------------*/
+.breadcrumbs-area {
+  background: rgba(0, 0, 0, 0) url("images/breadcrumb.jpg") no-repeat scroll center center;
+}
+.breadcrumbs h3 {
+  font-weight: 600;
+}
+.breadcrumbs-list > li {
+  display: inline-block;
+}
+.breadcrumbs-list a {
+  color: #fff;
+}
+.breadcrumbs-list a:hover {
+  color: #01a6a9;
+}
+.breadcrumbs-list li{
+  color: #01a6a9;
+}
+/*----------------------------------------*/
+/*  9. Shop Page CSS
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  9.1 Shop View
+/*----------------------------------------*/
+.shop-tab-pill ul li a {
+  font-size: 20px;
+}
+.shop-tab-pill ul li a {
+  font-size: 20px;
+  line-height: normal;
+}
+.shop-tab-pill li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.shop-tab-pill ul li a {
+  font-size: 20px;
+  line-height: normal;
+  height: 33px;
+  width: 33px;
+  color: #909090;
+  display: block;
+  border: 1px solid #909090;
+  text-align: center;
+}
+.shop-tab-pill ul li:hover a {
+  background: #01a6a9 none repeat scroll 0 0;
+  border-color: #01a6a9;
+  color: #ffffff !important;
+}
+.shop-tab-pill li:last-child {
+  margin: 0;
+}
+.shop-tab-pill li.active a {
+  background: #01a6a9;
+  color: #fff;
+  border-color: #01a6a9;
+}
+.shop-tab-pill li.active:hover a {
+  background: transparent;
+  border-color: #909090;
+  color: #909090;
+}
+.show-label select {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #e7e7e7;
+  color: #9c9b9b;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  height: 33px;
+  padding-inline-end: 0;
+  padding-inline-start: 5px;
+  width: 53%;
+}
+.shop-pagination li a {
+  display: block;
+  height: 33px;
+  width: 30px;
+  border: 1px solid #E7E7E7;
+  text-align: center;
+  line-height: 33px;
+  color: #606060;
+}
+.shop-pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.shop-pagination li:last-child {
+  margin-right: 0;
+}
+.shop-pagination li:hover a {
+  background: #01a6a9 none repeat scroll 0 0;
+  border-color: #01a6a9;
+  color: #ffffff !important;
+}
+.show .show-label select {
+  padding-inline-end: 0;
+  padding-inline-start: 3px;
+  width: 35%;
+}
+.product-content > p {
+  margin-bottom: 0;
+}
+/*----------------------------------------*/
+/*  9.2 Shop Left Side Bar CSS
+/*----------------------------------------*/
+.aside-title {
+  border-bottom: 1px solid #eeeeee;
+}
+/*----------------------------------------*/
+/*  9.3 Treeeview Css
+/*----------------------------------------*/
+.treeview li { position: relative }
+.treeview .hitarea {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 40px;
+}
+.hitarea.expandable-hitarea::before {
+  color: #999999;
+  content: "+";
+  font-size: 20px;
+}
+.hitarea.collapsable-hitarea::before {
+  color: #999999;
+  content: "-";
+  font-size: 20px;
+}
+.product-cat ul li a {
+  color: #606060;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: 40px;
+}
+.product-cat ul li { border-bottom: 1px solid #eeecec }
+.product-cat ul li ul li { padding-left: 15px }
+.product-cat ul li ul li a { font-size: 13px }
+.product-cat ul li.collapsable > a {
+  color: #01a6a9;
+}
+.collapsable ul.treeview li.expandable a {
+  color: #909090;
+}
+.collapsable ul.treeview li a {
+  color: #909090;
+}
+/*----------------------------------------*/
+/*  9.4 Price Slider CSS
+/*----------------------------------------*/
+.price-slider-amount input {
+  border: medium none;
+  width: 70%;
+}
+.price_filter .ui-slider-range {
+  background: #01A6A9 none repeat scroll 0 0;
+}
+.price-filter .ui-slider.ui-slider-horizontal.ui-widget.ui-corner-all {
+  background: #DCDCDC none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  height: 3px;
+  left: 30px;
+  width: 80%;
+}
+.price-filter .ui-slider span.ui-slider-handle.ui-state-default.ui-corner-all {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #01a6a9;
+  border-radius: 100%;
+  cursor: w-resize;
+  height: 12px;
+  margin-top: 0;
+  width: 12px;
+}
+.price-slider-amount label {
+  color: #606060;
+  font-weight: normal;
+  vertical-align: calc(0px);
+}
+.price-filter .ui-slider-range {
+  background: #01A6A9 none repeat scroll 0 0;
+}
+.aside-size ul li a {
+  border-right: 1px solid #ddd;
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  margin-left: -4px;
+  padding: 0 20px;
+  text-align: center;
+}
+.aside-size ul li:first-child a {
+  border-left: 1px solid #ddd;
+  margin: 0;
+}
+.aside-size ul {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.aside-size ul li {
+  display: inline-block;
+}
+.aside-size ul li a:hover {
+  background: #01a6a9 none repeat scroll 0 0;
+  color: #ffffff !important;
+}
+/*----------------------------------------*/
+/*  9.5 color css
+/*----------------------------------------*/
+.aside-color ul li {
+  display: inline-block;
+  margin-right: 6px;
+}
+.aside-color ul li:last-child {
+  margin: 0;
+}
+.aside-color ul li a{
+  height: 21px;
+  width: 21px;
+  display: block;
+}
+.color-1 a{background: #FFA07A;}
+.color-2 a{background: #00EEEE;}
+.color-3 a{background: #FF7F24;}
+.color-4 a{background: #FE5858;}
+.color-5 a{background: #E9967A;}
+.color-6 a{background: #E9967A;}
+.color-7 a{background: #FFA07A;}
+/*----------------------------------------*/
+/*  10. Product Details Page CSS
+/*----------------------------------------*/
+.single-product-image div.pro-view {
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  line-height: 0;
+  margin-right: 13px;
+  text-align: center;
+}
+.single-product-image div.pro-view:last-child {
+  margin-right: 0;
+}
+.single-product-image #viewproduct.nav-tabs {
+  border-bottom: medium none;
+}
+.product-view p {
+  line-height: 20px;
+  margin: 0;
+  padding-top: 3px;
+}
+.product-details-tilte {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.product-size ul li a {
+  border: 1px solid #ececec;
+  color: #909090;
+  display: block;
+  font-size: 12px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  width: 23px;
+}
+.product-size ul li a:hover {
+  background: #01a6a9 none repeat scroll 0 0;
+  border-color: #01a6a9;
+  color: #fff;
+}
+.product-size ul li:first-child {
+  margin-left: 0;
+}
+.product-size ul li {
+  display: inline-block;
+  margin-left: 6px;
+}
+.product-color ul li a {
+  display: block;
+  height: 21px;
+  width: 21px;
+}
+.product-color ul li {
+  display: inline-block;
+}
+.product-attributes {
+  width: 100%;
+}
+.product-attributes div {
+  float: left;
+}
+.product-color {
+  width: 20%;
+}
+#quantity-wanted{
+  width:30%;
+}
+#quantity-wanted input {
+  border: 1px solid #ececec;
+  color: #333333;
+  float: left;
+  font-size: 12px;
+  height: 23px;
+  padding: 2px 0 0;
+  text-align: center;
+  width: 30%;
+}
+.qtybutton-border {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #ececec #ececec #ececec -moz-use-text-color;
+  border-image: none;
+  border-style: solid solid solid none;
+  border-width: 1px 1px 1px medium;
+  height: 23px;
+  position: relative;
+}
+#quantity-wanted .qtybutton {
+  color: #909090;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  height: 7px;
+  line-height: 7px;
+  padding: 0;
+  text-align: center;
+  width: 19px;
+}
+.product-action-shop {
+  background: #01a6a9 none repeat scroll 0 0;
+  border-radius: 3px;
+  line-height: 50px;
+  width: 230px;
+}
+.product-action-shop > a {
+  border-right: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 26px;
+}
+.product-action-shop > a:hover {
+  color: #ffffff !important;
+}
+.product-action-shop > a:last-child {
+  border-right: 0 none;
+}
+.socialsharing-product > button {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #01a6a9;
+  border-radius: 50%;
+  color: #01a6a9;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 6px;
+  transition: all 0.3s ease 0s;
+  width: 30px;
+}
+.socialsharing-product > button:hover {
+  background: #01a6a9 none repeat scroll 0 0;
+  color: #fff;
+}
+.socialsharing-product > button:last-child {
+  margin: 0;
+}
+.p-details-tab ul li {
+  display: inline;
+  float: left;
+  margin-bottom: 1px;
+  margin-right: 36px;
+  position: relative;
+}
+.p-details-tab .nav.nav-tabs > li a {
+  border: 0 none;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 0 20px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 300ms ease 0s;
+}
+.p-details-tab li a:hover, .p-details-tab li.active > a {
+  color: #01a6a9 !important;
+}
+#description p {
+  color: #888888;
+}
+#description p:last-child {
+  margin: 0;
+}
+.table-data-sheet {
+  background: #ffffff none repeat scroll 0 0;
+  border-bottom: 1px solid #d6d4d4;
+  margin: 0 0 30px;
+  width: 100%;
+}
+.table-data-sheet tr {
+  border-top: 1px solid #d6d4d4;
+}
+.table-data-sheet tr td:first-child {
+  border-right: 1px solid #d6d4d4;
+  color: #333333;
+  font-weight: 700;
+  width: 30%;
+}
+.table-data-sheet tr td {
+  padding: 10px 20px 11px;
+}
+#product-comments-block-tab a {
+  background: #6f6f6f none repeat scroll 0 0;
+  border-color: #666666 #5f5f5f #292929;
+  border-image: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+}
+#product-comments-block-tab a span {
+  border: 1px solid #8b8a8a;
+  display: block;
+  padding: 3px 8px;
+}
+/*----------------------------------------*/
+/*  10.1 Related Product css
+/*----------------------------------------*/
+.related-product-title h4 {
+  font-weight: 500;
+  margin: 0;
+}
+.wishlist-table table {
+  margin: 0;
+  width: 100%;
+}
+.wishlist-table {
+  background: #f6f6f6 none repeat scroll 0 0;
+}
+.wishlist-table thead {
+  background: #fff none repeat scroll 0 0;
+  line-height: 30px;
+}
+.wishlist-table table .product-add-to-cart {
+  width: 150px;
+}
+.wishlist-table table th {
+  font-weight: 600;
+}
+.wishlist-table table .product-thumbnail {
+  width: 83px;
+}
+.wishlist-table table td {
+  border-right: medium none;
+  color: #333333;
+  padding: 20px 10px;
+}
+.product-name p {
+  color: #909090;
+}
+.product-name label {
+  color: #909090;
+  vertical-align: calc(0px);
+}
+.wishlist-table tbody tr {
+  border-bottom: 2px solid #fff;
+}
+.product-remove a {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #606060;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
+.wishlist-table tbody tr:last-child {
+  border: medium none;
+}
+/*----------------------------------------*/
+/*  11. Cart Page CSS
+/*----------------------------------------*/
+.product-value {
+  width: 200px;
+}
+.product-value > input {
+  border: 1px solid #ececec;
+  width: 40%;
+}
+.cart-show-label select {
+  height: 34px;
+  width: 100%;
+}
+.counpon-total table {
+  border: medium none;
+  float: right;
+  margin: 0;
+  text-align: right;
+}
+.counpon-total table th {
+  border: medium none;
+  color: #69686c;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 20px 12px 0;
+  vertical-align: top;
+}
+.counpon-total table td {
+  border: medium none;
+  color: #69686c;
+  padding: 0 0 12px;
+  vertical-align: top;
+  width: 68%;
+}
+.cart-shipping {
+  border-bottom: 1px solid #909090;
+}
+.cart-total th, .cart-total td {
+  padding-top: 12px !important;
+}
+/*----------------------------------------*/
+/*  12. Checkout Page CSS
+/*----------------------------------------*/
+.form-row > input {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+}
+.form-row > input:focus {
+  border: 1px solid #01a6a9;
+}
+.form-row textarea {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  height: 130px;
+  resize: none;
+}
+.form-row textarea:focus {
+  border: 1px solid #01a6a9;
+}
+.order-info table {
+  border: medium none;
+  margin: 0;
+  text-align: right;
+  width: 100%;
+}
+.order-info table tbody tr {
+  border-top: 1px solid #e7e7e7;
+  color: #909090;
+  height: 34px;
+  width: 100%;
+}
+.order-info table tbody tr th {
+  font-weight: normal;
+}
+.order-info table tbody tr.total {
+  border-top: 1px solid #909090;
+}
+.order-info table tbody tr:first-child {
+  border: medium none;
+}
+.total th {
+  color: #01a6a9;
+}
+.total td {
+  color: #01a6a9;
+}
+.order-info .panel-group .panel {
+  border: medium none;
+  border-radius: 0;
+}
+.billing-title h5 {
+  line-height: 16px;
+  margin: 0;
+}
+.order-info .panel-default > .panel-heading {
+  background-color: #fff;
+  border-color: #fff;
+  color: #333;
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+  background: #f6f6f6 none repeat scroll 0 0;
+  border: 0 solid #ddd;
+  color: #909090;
+  font-weight: 300;
+}
+.order-info .panel-title {
+  font-family: poppins;
+  font-size: 14px;
+}
+.order-info .panel-title a {
+  display: block;
+  position: relative;
+}
+.panel-title a.collapsed::after {
+  content: "";
+  float: right;
+  font: 16px material-design-iconic-font;
+  margin-right: 0;
+  padding-right: 0;
+}
+.panel-title a::after {
+  content: "";
+  float: right;
+  font: 16px material-design-iconic-font;
+  margin-right: 0;
+  padding-right: 0;
+}
+/*----------------------------------------*/
+/*  13. Contact Page css
+/*----------------------------------------*/
+.map-area {
+  position: relative;
+}
+.contact-form input {
+  margin-bottom: 18px;
+  height: 42px;
+}
+.contact-form textarea {
+  height: 88px;
+  resize: none;
+  background: transparent;
+  border: 1px solid #eee;
+}
+.contact-form input[type="submit"] {
+  background: #01a6a9 none repeat scroll 0 0;
+  border-color: #01a6a9;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  width: 40%;
+}
+.contact-form input[type="submit"]:hover {
+  background: transparent;
+  color: #333;
+  border-color: #333;
+}
+.contact-address ul {
+  border: 1px solid #ddd;
+}
+.address-info {
+  box-shadow: 1px 1px 6px rgba(86, 86, 90, 0.5);
+  background: #fff;
+  margin-top: -125px;
+  z-index: 9;
+  position: relative;
+}
+.form-messege.error {
+  color: #FF2F00;
+}
+.form-messege.success {
+  color: #01A6A9;
+}
+/*----------------------------------------*/
+/*  14. Quick View css
+/*----------------------------------------*/
+#productModal .modal-dialog {
+  margin: 5% auto;
+  max-width: 96%;
+  min-height: 300px;
+  padding: 20px;
+  transition: all 0.5s ease 0s;
+  width: 965px;
+}
+#productModal .modal-header {
+  border: 0 none;
+  min-height: auto;
+  padding: 0;
+}
+#productModal button.close {
+  opacity: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: all 0.3s ease 0s;
+  z-index: 2;
+}
+#productModal button.close span {
+  border: 1px solid #909295;
+  border-radius: 60px;
+  color: #909295;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-top: 1px;
+  text-align: center;
+  width: 30px;
+}
+.modal-product {
+  overflow: hidden;
+}
+.modal-product .single-product-image {
+  float: left;
+  width: 40%;
+}
+.modal-product .product-details-content {
+  float: left;
+  padding-left: 30px;
+  width: 60%;
+}
+.modal-product .single-product-image div.pro-view {
+  width: 22%;
+}
+/* ScrollUp CSS */
+#scrollUp {
+  background: #262b32 none repeat scroll 0 0;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  bottom: 30px;
+  color: #ffffff;
+  height: 35px;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  width: 35px;
+}
+#scrollUp i {
+  display: block;
+  line-height: 33px;
+  font-size: 20px;
+}
+#scrollUp:hover {
+  background: #01a6a9 none repeat scroll 0 0;
+  color: #ffffff;
+}
+/*----------------------------------------*/
+/*  15. 404 page css
+/*----------------------------------------*/
+.search-box input {
+  border: 1px solid #333;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  width: 305px;
+}
+.btn-search {
+  background: #333 none repeat scroll 0 0;
+  border: 1px solid #333;
+  color: #aaa;
+  font-size: 17px;
+  height: 25px;
+  line-height: 26px;
+  padding: 0;
+  width: 25px;
+}
+.search-box button {
+  bottom: 10px;
+  position: absolute;
+  right: 38%;
+}
+.btn-search:hover {
+  background: transparent none repeat scroll 0 0;
+}
+.wrapper {
+  background: #fff none repeat scroll 0 0;
+}
+/*----------------------------------------*/
+/*  16. Blog Details Page css
+/*----------------------------------------*/
+#blog-search {
+  border: 1px solid rgb(229, 229, 229);
+}
+#blog-search .submit {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  color: rgb(95, 95, 95);
+  float: right;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-align: right;
+  width: 20%;
+}
+#blog-search input {
+  border: medium none;
+  color: rgb(95, 95, 95);
+  font-weight: 300;
+  max-height: 30px;
+  outline: medium none;
+  padding: 5px 10px;
+  width: 80%;
+}
+.blog-sidebar ul li {
+  color: #5f5f5f;
+  font-size: 12px;
+  line-height: 22px;
+  overflow: hidden;
+  padding: 3px 1px;
+}
+.blog-sidebar ul li a {
+  color: #5f5f5f;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.blog-sidebar ul li a::before {
+  color: #9a9a9a;
+  content: "";
+  display: inline-block;
+  font-family: material-design-iconic-font;
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 10px;
+}
+.blog-sidebar.post .post-info > a:hover, .blog-sidebar a:hover {
+  color: #01A6A9;
+}
+.blog-sidebar.post li {
+  margin-bottom: 15px;
+}
+.blog-sidebar.post li:last-child {
+  margin: 0;
+  padding-bottom: 0;
+}
+.blog-sidebar .post-thumb {
+  float: left;
+  margin-right: 10px;
+  width: 104px;
+}
+.blog-sidebar.post ul li a::before {
+  display: none;
+}
+.blog-sidebar.post .post-info {
+  display: inline-block;
+}
+.blog-sidebar.post .post-info > span {
+  color: #5f5f5f;
+  display: block;
+  font-weight: 400;
+}
+.blog-sidebar .tags-list {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  display: block;
+  font-size: 12px;
+}
+.blog-sidebar .tags-list li {
+  display: inline-block !important;
+}
+.blog-sidebar ul.tags-list li a::before {
+  display: none;
+}
+.blog-sidebar .tags-list li a, .blog-sidebar .actions a {
+  border: 1px solid #e1e1e1;
+  color: #9d9d9d;
+  display: inline-block;
+  font-size: 12px !important;
+  line-height: 1;
+  padding: 8px 17px;
+  text-transform: capitalize;
+}
+.blog-sidebar ul.tags-list li a:hover, .blog-sidebar .actions a:hover {
+  background: #01a6a9 none repeat scroll 0 0;
+  border: 1px solid #01a6a9;
+  color: #ffffff;
+}
+.postinfo-wrapper {
+  position: relative;
+  width: 100%;
+}
+.blog-details-area .post-date .day {
+  display: block;
+  font-size: 20px;
+}
+.blog-details-area .post-date {
+  background: #666666 none repeat scroll 0 0;
+  color: #ffffff;
+  float: left;
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 70px;
+}
+.blog-post-title {
+  color: #666666;
+  position: relative;
+  text-align: left;
+}
+.entry-meta {
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  color: #909295;
+  float: left;
+  font-weight: 600;
+  width: 100%;
+}
+.entry-summary {
+  float: left;
+  width: 100%;
+}
+.entry-summary p {
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 15px;
+}
+blockquote {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: medium none;
+  font-size: 14px;
+  font-style: italic;
+  margin: 20px 0;
+  padding: 30px 45px;
+}
+.about-page-cntent p:last-child {
+  margin: 0;
+}
+.single-blog .share-icon {
+  clear: both;
+  display: -moz-inline-box;
+}
+.single-blog .share-icon h5 {
+  color: #252525;
+  float: left;
+  line-height: 34px;
+  margin: 0 20px 0 0;
+}
+.single-blog .share-icon ul li {
+  border-left: 1px solid #e5e5e5;
+  float: left;
+  line-height: 34px;
+}
+.single-blog .share-icon ul li:first-child {
+  border: medium none;
+}
+.single-blog .share-icon ul li a {
+  color: #666666;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 34px;
+  padding: 0 25px;
+  text-align: center;
+}
+.single-blog .share-icon ul li a.facebook:hover {
+  color: #3b579d;
+}
+.single-blog .share-icon ul li a.twitter:hover {
+  color: #3acaff;
+}
+.single-blog .share-icon ul li a.pinterest:hover {
+  color: #ce2027;
+}
+.single-blog .share-icon ul li a.google-plus:hover {
+  color: #d11717;
+}
+.single-blog .share-icon ul li a.linkedin:hover {
+  color: #0097bd;
+}
+.author-info {
+  float: left;
+  width: 100%;
+}
+.author-avatar {
+  float: left;
+  width: 10%;
+}
+.author-description {
+  float: left;
+  width: 90%;
+}
+.author-description h6 {
+  color: #252525;
+  font-weight: 600;
+}
+.author-description p {
+  color: #6a6a6a;
+  font-size: 13px;
+  font-weight: 300;
+}
+.reply-comment-area {
+  overflow: hidden;
+  width: 100%;
+}
+.reply-comment-area h4 {
+  border-top: 1px solid #e5e5e5;
+  color: #252525;
+  font-size: 24px;
+}
+.single-reply {
+  overflow: hidden;
+}
+.comment-author {
+  float: left;
+  width: 7%;
+}
+.comment-author img {
+  border-radius: 100%;
+}
+.comment-author > img {
+  width: 100%;
+}
+.comment-info::before {
+  background: #ffffff none repeat scroll 0 0;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  content: "";
+  display: block;
+  height: 10px;
+  left: -5px;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 10px;
+}
+.comment-info {
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  float: right;
+  position: relative;
+  width: 91%;
+}
+.comment-author-info {
+  color: #9d9d9d;
+  font-size: 12px;
+  line-height: 1;
+}
+.user-comment-form-area {
+  border-top: 1px solid #e5e5e5;
+}
+.user-comment-form-area p {
+  color: #9d9d9d;
+  line-height: 1;
+}
+span.required {
+  color: #ff0000;
+  font-weight: 700;
+}
+.user-comment-form-area p.form-row label {
+  color: #666666 !important;
+  font-weight: normal;
+}
+p.form-row input {
+  background: #fbfbfb none repeat scroll 0 0;
+  border: 1px solid #e5e5e5;
+  height: 30px;
+  margin: 0 0 14px;
+  outline: 0 none;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+.user-comment-form-area textarea {
+  border: 1px solid #e5e5e5;
+  height: 120px;
+  resize: none;
+  width: 100%;
+}
+.author-description > p {
+  margin: 0;
+}
+/*----------------------------------------*/
+/*  17. Blog Two Page css
+/*----------------------------------------*/
+.blog-desc p {
+  color: #999999;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.single-blog-2 .blog-image {
+  overflow: hidden;
+}
+.single-blog-2 img {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.single-blog-2:hover img {
+  opacity: 0.4;
+  transform: scale3d(1.1, 1.1, 1);
+}
+/*----------------------------------------*/
+/*  17. My Account Page css
+/*----------------------------------------*/
+.procced-title {
+  border-bottom: 1px solid #d6d4d4;
+  font: 500 18px/22px "Open Sans",sans-serif;
+}
+.my-account-page .panel-default > .panel-heading {
+  background-image: linear-gradient(#f7f7f7, #ededed);
+  border-color: #cacaca #b7b7b7 #9a9a9a;
+  border-image: none;
+  border-radius: 4px 4px 0 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #555454;
+  display: block;
+  font: 600 16px/20px "Open Sans",sans-serif;
+  overflow: hidden;
+  text-decoration: none;
+  text-shadow: 0 1px #ffffff;
+  text-transform: uppercase;
+}
+.my-account-page .panel-default > .panel-heading:hover {
+  background: #e7e7e7 none repeat scroll 0 0;
+  border-color: #9e9e9e #c2c2c2 #c8c8c8;
+  color: #555454;
+  filter: none;
+}
+.my-account-page .panel-default > .panel-heading h4 {
+  font-size: 16px;
+}
+.my-account-page .panel-title a {
+  display: block;
+  position: relative;
+}
+.my-account-page .panel-title a::before {
+  border: 1px solid #eeeeee;
+  content: "";
+  height: 46px;
+  left: 30px;
+  position: absolute;
+  top: -10px;
+}
+.addresses-lists .panel-heading a span {
+  margin-left: 20px;
+}
+.addresses-lists .panel-heading a i {
+  color: #01a6a9;
+  font-size: 20px;
+}
+.addresses-lists p.required {
+  color: #f13340;
+  margin: 9px 0 16px;
+}
+.country-select select {
+  background: #fbfbfb none repeat scroll 0 0;
+  height: 30px;
+  margin-bottom: 15px;
+}
+.coupon-info p {
+  margin-bottom: 0;
+}
+.radio-inline label.top span.checked input , .addresses-lists .checkbox input[type="checkbox"]{
+  margin-top: 4px;
+}
+/*----------------------------------------*/
+/*  17. Login / Register Page css
+/*----------------------------------------*/
+.box-shadow {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.submit-btn {
+  background: #01a6a9 none repeat scroll 0 0;
+  border: 1px solid #01a6a9;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  height: 35px;
+  line-height: 36px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.submit-btn:hover {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #01a6a9;
+  color: #01a6a9;
+}
+select.custom-select {
+  background: transparent none repeat scroll 0 0;
+  margin-bottom: 20px;
+  width: 99%;
+}
+/* About Page CSS */
+.team-img {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  display: inline-block;
+  height: auto;
+  margin: 0 auto 10px;
+  position: relative;
+  transition: all 0.4s ease 0s;
+  width: auto;
+}
+.item-team:hover .team-img {
+  border-color: #01A6A9;
+}
+.team-img img {
+  border: 7px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.team-info .mask {
+  background: rgba(1, 166, 169, 0.4) none repeat scroll 0 0;
+  border-radius: 100%;
+  height: 95%;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 7px;
+  transition: all 0.5s ease 0s;
+  width: 95%;
+}
+.item-team:hover .team-img .mask {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+.team-info .mask .mask-inner {
+  margin-top: -16px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.team-info .mask .mask-inner i {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #01A6A9;
+  height: 33px;
+  line-height: 33px;
+  transition: all 0.5s ease 0s;
+  width: 33px;
+}
+.item-team h6 {
+  margin: 0;
+}
+
+
+
+/* Compare Page CSS */
+.upload-box > input {
+  display: none;
+}
+.upload-box img {
+  cursor: pointer;
+}
+.upload-box > p {
+  font-family: montserrat;
+  font-size: 18px;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
+table.table {
+  margin-bottom: 0;
+  width: 100%;
+}
+.table-head.th-name {
+  font-family: open san;
+  font-weight: 700;
+}
+.compare-wraper thead th {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border-bottom: 1px solid #f1f1f1 !important;
+  padding: 17px 15px !important;
+}
+.table-head {
+  font-size: 18px;
+  font-weight: normal;
+  width: 25%;
+}
+.cart tbody tr {
+  transition: all 0.3s ease 0s;
+}
+.cart tbody tr:hover {
+  background: #f6f6f7 none repeat scroll 0 0;
+}
+.compare-wraper .cart_item td {
+  border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+  padding: 15px;
+  vertical-align: middle;
+}
+.item-quality {
+  font-family: open san;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.item-des {
+  font-size: 18px;
+}
+/* Up Comming Product Style 2 css */
+.product-cuntdown-2 span {
+  display: inline-block;
+  margin-left: 10px;
+}
+.product-cuntdown-2 span:first-child {
+  margin-left: 0;
+}
+.product-cuntdown-2 {
+  bottom: 125px;
+  height: 100px;
+  left: 0;
+  opacity: 0.9;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.product-cuntdown-2 .cdown span.time-count {
+  border-bottom: 1px solid #01a6a9;
+  color: #01a6a9;
+  display: inline-block;
+  line-height: 24px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.product-cuntdown-2 .cdown span.time-count::before {
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  bottom: -1px;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 5px;
+}
+/* Elements CSS */
+.blog-audio audio {
+  width: 100%;
+}
+.blue-bg .breadcrumbs-list li {
+  color: #000;
+}
+.blue-bg .breadcrumbs-list a:hover {
+  color: #000;
+}
+.message-box {
+  padding: 40px 60px;
+}
+textarea.custom-textarea {
+  background: transparent none repeat scroll 0 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  height: 110px;
+  resize: none;
+}
+/* Shorcode tab css */
+.shortcode-tab-list {
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.shortcode-tab-list li {
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+.shortcode-tab-list li a {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}
+.shortcode-tab-list li.active a {
+  border-color: #01a6a9;
+  color: #01a6a9;
+}
+.button-area .tab-content {
+  float: left;
+  width: 100%;
+}
+.button-area {
+  font-family: roboto slab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

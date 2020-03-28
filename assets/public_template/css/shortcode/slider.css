@@ -1,0 +1,105 @@
+/* -----------------------------------
+
+Template Name: Freak Ecommerce Responsive Bootstrap Template
+Template URI: http://bootexperts.com
+Description: This is html5 template
+Author: BootExperts
+Author URI: http://bootexperts.com
+Version: 1.0
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+
+.slider-area > img {
+  height: 100vh;
+  width: 100%;
+}
+.slider-height {
+  height: 100%;
+}
+.nivo-caption {
+  background: transparent none repeat scroll 0 0;
+  height: 100%;
+  opacity: 1;
+  padding: 0;
+}
+.slide-text {
+  position: absolute;
+  top: 27%;
+}
+.cap-main-title h2{
+  float: right;
+  margin: 0;
+  line-height: 1;
+}
+.cap-title , .cap-sub-title , .cap-sub-title{
+  overflow: hidden;
+  text-align: left;
+}
+.cap-sub-title p {
+  padding: 0 0 0 70px;
+  text-align: right;
+}
+.cap-shop a {
+  float: right;
+}
+.cap-sub-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.cap-title h2 {
+  font-size: 70px;
+  letter-spacing: 7px;
+}
+.nivo-controlNav {
+  padding: 0;
+}
+.nivo-directionNav a::before {
+  color: #fff;
+  content: "";
+  display: inline-block;
+  font-family: material-design-iconic-font;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+  width: 100%;
+}
+.slider-area:hover .nivo-directionNav a {
+  opacity: 1;
+}
+.nivo-directionNav a.nivo-prevNav {
+  left: 30px;
+}
+.nivo-directionNav a.nivo-nextNav {
+  right: 30px;
+}
+.nivo-directionNav a {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ececec;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 50px;
+  margin-top: -25px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+  z-index: 9;
+}
+.nivo-directionNav a.nivo-nextNav::before {
+  content: "";
+}
+.nivo-directionNav a:hover {
+  background: #01A6A9;
+  border-color: #01A6A9;
+}
+
+
+
+
+

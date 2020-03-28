@@ -1,0 +1,443 @@
+/* -----------------------------------
+Template Name: Freak Ecommerce Responsive Bootstrap Template
+Template URI: http://bootexperts.com
+Description: This is html5 template
+Author: BootExperts
+Author URI: http://bootexperts.com
+Version: 1.0
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+
+
+/*menu style */
+.header-area{
+	z-index: 10;
+	position: relative;
+}
+.main-menu > li > a {
+  color: #303030;
+  display: block;
+  padding: 25px 20px;
+  text-transform: uppercase;
+}
+.main-menu li {
+    display: inline-block;
+    position: relative;
+}
+.main-menu > li:hover > a{
+	color: #01A6A9;
+} 
+.dropdown > li:hover > a{
+	color: #01A6A9;
+}
+.single-mega-item > li:hover > a {
+  color: #01A6A9;
+}
+/*Dropdown Style*/
+.dropdown , .header-top-down , .header-top-down-lang {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+  border: 1px solid #ADADAD;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 250px;
+  z-index: 2;
+}
+.dropdown li{
+	display: block;
+}
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
+}
+.main-menu li:hover .dropdown, .header-top ul li:hover .header-top-down, .header-top ul li:hover .header-top-down-lang {
+  transform: scale(1);
+  visibility: visible;
+  z-index: 9999999999;
+}
+/*Mega menu style*/
+/*#primary-menu {
+  position: relative;
+}*/
+.mega-menu-area {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 2;
+}
+.mega-menu-area-2 .single-mega-item {
+  width: 50%;
+}
+.main-menu li:hover .mega-menu-area-2 {
+  transform: scale(1);
+  visibility: visible;
+}
+.mega-menu-area-2 {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 100%;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 568px;
+  z-index: 2;
+}
+.main-menu li.mega-parent {
+    position: static;
+}
+.single-mega-item {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+}
+.single-mega-item li {
+    display: block;
+}
+.single-mega-item li:last-child{
+	border-bottom: 0px solid #000;
+} 
+.single-mega-item li a{
+  padding: 10px 0px;
+  display: block;
+}
+.single-mega-item li:last-child a {
+  padding-bottom: 0;
+}
+.main-menu li:hover .mega-menu-area{
+	transform: scale(1);
+	visibility: visible;
+}
+.header-middle-area .container .row [class*="col-"] {
+	position: static;
+ }
+ .header-middle-area .full-width-mega-dropdown{
+ 	position: relative;
+ }
+ /*Header Transprent */
+ .transparent-header{
+ 	width: 100%;
+ 	margin: auto;
+ 	background: rgba(255,255,255,0.3);
+ }
+ .transparent-header .main-menu > li > a{
+  color: #fff;
+ }
+.transparent-header.sticky {
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  z-index: 999;
+}
+ /*Sticky Menu*/
+ .sticky {
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+}
+ .sticky .main-menu > li > a{
+ 	padding: 20px 18px;
+  color: #fff;
+ }
+.logo {
+	transition: all 0.3s ease 0s;
+}
+.logo img{
+	transition: all 0.3s ease 0s;
+	width: 194px;
+}
+.sticky .logo img {
+	transition: all 0.3s ease 0s;
+    width: 150px;
+}
+ .sticky .logo{
+ 	padding: 14px 0;
+ }
+.header-top > ul > li {
+  display: inline-block;
+  position: relative;
+}
+.header-top-right {
+  float: right;
+}
+.header-top > ul > li > a {
+  border-right: 1px solid #cccccc;
+  font-size: 13px;
+}
+.header-top ul > li:last-child a {
+  border: medium none;
+}
+.header-top ul > li > a i {
+  font-size: 18px;
+}
+.header-top-down , .header-top-down-lang {
+  top: 140%;
+  width: 125px;
+}
+.header-top-down a {
+  display: block;
+}
+.header-top-down-lang{
+  width: 125px;
+}
+.cart-link > a {
+  position: relative;
+}
+.cart-link > a span {
+  background: #01A6A9 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: -10px;
+  text-align: center;
+  top: -13px;
+  width: 20px;
+}
+.my-account-down ul li {
+  transition: all 0.4s ease 0s;
+}
+.header-top-hover li {
+  transition: all 0.4s ease 0s;
+}
+.header-top-hover li:first-child:hover {
+  padding: 0;
+}
+.header-top-hover li:hover {
+  padding-left: 8px;
+}
+.mini-cart-inner {
+  right: 0;
+  width: 300px;
+}
+.cart-list > li {
+  overflow: hidden;
+}
+.product-image {
+  float: left;
+  position: relative;
+}
+.product-details {
+  float: left;
+  line-height: 1;
+  position: relative;
+  width: 65%;
+}
+.remove {
+  background: #ececec none repeat scroll 0 0;
+  border-radius: 4px;
+  height: 20px;
+  line-height: 20px !important;
+  position: absolute;
+  right: -14px;
+  text-align: center;
+  top: 0;
+  width: 20px;
+}
+.product-name {
+  color: #3f3f3f;
+  line-height: 20px;
+  font-weight: 700;
+}
+a.product-name {
+  line-height: 1;
+}
+.product-details span {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+.product-details span:last-child {
+  margin: 0;
+}
+.buttons {
+  line-height: 1;
+}
+h2.mega-menu-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+/* Header Search css */
+.header-bottom-search {
+  background: #ffffff none repeat scroll 0 0;
+  border: medium none;
+  width: 500px;
+}
+.header-top .header-bottom-search form {
+  border: 2px solid #01a6a9;
+  float: left;
+  width: 100%;
+}
+form.header-search-box {
+  position: relative;
+}
+.header-top .header-bottom-search input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #01a6a9;
+  height: 40px;
+  line-height: 40px;
+  width: 85%;
+}
+.header-top .header-bottom-search button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #01a6a9;
+  height: 40px
+}
+
+
+
+
+
+
+
+
+
+/*Mega Menu Image*/
+.aside-img {
+  overflow: hidden;
+  position: relative;
+}
+.widget-img::before {
+  background: rgba(239, 240, 242, 0) linear-gradient(45deg, #EFF0F2, #EFF0F2) repeat scroll 0 0;
+  content: "";
+  height: 30%;
+  left: 16px;
+  right: 16px;
+  opacity: 0;
+  position: absolute;
+  bottom: 32px;
+  transform: scaleX(0);
+  transition: all 0.3s ease 0s;
+  width: 88%;
+}
+.widget-img:hover::before {
+  opacity: 0.7;
+  transform: scaleX(1);
+}
+.widget-img::after {
+  background: rgba(239, 240, 242, 0) linear-gradient(45deg, #EFF0F2, #EFF0F2) repeat scroll 0 0;
+  content: "";
+  height: 30%;
+  left: 16px;
+  right: 16px;
+  opacity: 0;
+  position: absolute;
+  bottom: 32px;
+  transform: scaleY(0);
+  transition: all 0.3s ease 0s;
+  width: 88%;
+}
+.widget-img:hover::after {
+  opacity: 0.7;
+  transform: scaleY(1);
+}
+.aside-img .best {
+  bottom: 25%;
+  display: block;
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  z-index: 2;
+}
+.aside-img:hover .best {
+  left: 30%;
+  opacity: 1;
+}
+.aside-img .brand {
+  bottom: 15%;
+  display: block;
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  z-index: 2;
+}
+.aside-img:hover .brand {
+  right: 20%;
+  opacity: 1;
+}
+.main-menu ul.dropdown li:hover ul.inside-menu {
+  opacity: 1;
+  transform: scaleX(1);
+  z-index: 9999;
+}
+.main-menu ul.dropdown ul.inside-menu {
+  left: 169px;
+  top: -2px;
+  transform: scaleX(0);
+  transform-origin: 0 0 0;
+  transition: all 0.6s ease 0s;
+  width: 195px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 14px 21px 16px;
+  position: absolute;
+  text-align: left;
+}
+.dropdown-inside {
+  width: 200px;
+}
+/* Header three css */
+.middle ul li {
+  display: inline-block;
+}
+.header-three img {
+  padding-top: 15px;
+}
+.sticky .header-three img {
+  padding-top: 10px;
+}
+/* Mobile css */
+.mobile-menu-area {
+  background: #01A6A9 none repeat scroll 0 0;
+  display: none;
+}
+
+
+
+
+
+
+
