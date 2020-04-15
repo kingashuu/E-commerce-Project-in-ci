@@ -9,6 +9,13 @@ class Store_items extends MX_Controller
 		$this->load->library('form_validation');
 		$this->form_validation->CI =& $this;
 	}
+	function _get_title($update_id)
+	{
+		$data=$this->fetch_data_from_db($update_id);
+		$item_title=$data['item_title'];
+		return $item_title;
+
+	}
 	function _get_item_id_from_item_url($item_url)
 	{
 		
@@ -37,7 +44,24 @@ class Store_items extends MX_Controller
 		$data['item_price_desc']=str_replace('.00', '', $data['item_price_desc']);
 		$data['item_description_limt']=word_limiter($data['item_description'], 50);
 		//$item_description =  word_limiter($item_description, 50);
-
+		$query_gallrey_pics=$this->_get_gallrey_pics($update_id);
+		$num_rows=$query_gallrey_pics->num_rows();
+		if ($num_rows>0) {
+			// we have at least one gallrey pic! load view page with item gallrey 
+			$data['use_angularjs']=TRUE;
+			//build an array af all gallrey pics
+			$count=0;
+			foreach ($query_gallrey_pics->result() as $row) {
+				$gallrey_pic[$count]=base_url().'image_galleries_pics/'.$row->picture;
+				$count++;
+			}
+			$data['gallrey_pic']= $gallrey_pic;
+			$data['view_file']='view_gallrey_version';
+		}else{
+			// load a normal page
+			$data['view_file']='view';
+			
+		}
 		//build the breadcrumbs array
 		//templates, current
 		//_page_title,breadcrumbs_array
@@ -48,7 +72,6 @@ class Store_items extends MX_Controller
 		$data['currency_symbol']=$this->site_settings->_get_currency_symbol();
 		$data['flash'] = $this->session->flashdata('item');
 		$data['view_module'] = "store_items";
-		$data['view_file'] = "view";
 		$this->load->module('templates');
 		$this->templates->public_bootstrap($data);
 
@@ -271,7 +294,7 @@ class Store_items extends MX_Controller
 		$config['allowed_types'] = 'gif|jpg|png|webp|DOC';
 		$config['max_size'] = 1000;
 		$config['max_width'] = 2024;
-		$config['max_height'] = 1620;
+		$config['max_height'] = 2000;
 
 		$this->load->library('upload', $config);
 		if (!$this->upload->do_upload('userfile')) {
@@ -375,18 +398,42 @@ class Store_items extends MX_Controller
 		} else {
 			$data['headline'] = 'Update Items Details';
 		}
+		$data['got_gallrey_pic'] = $this->_got_gallrey_pic($update_id);
 		$data['update_id'] = $update_id;
 		$data['flash'] = $this->session->flashdata('item');
-
 		$data['view_file'] = "create";
 		$this->load->module('templates');
 		$this->templates->admin($data);
+	}
+
+	function _got_gallrey_pic($update_id)
+	{
+		$this->load->module('item_galleries');
+		$query=$this->item_galleries->get_where_custom('parent_id', $update_id);
+
+		$num_rows=$query->num_rows();
+
+		if ($num_rows>0) {
+			// we have at least one gallery picture for tis item!
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
+
+	function _get_gallrey_pics($update_id)
+	{
+		$this->load->module('item_galleries');
+		$query=$this->item_galleries->get_where_custom('parent_id', $update_id);
+		return $query;
 	}
 
 	function manage()
 	{
 		$this->load->module('site_security');
 		$this->site_security->_make_sure_is_admin();
+		// $mysql_query = " SELECT * FROM store_orders WHERE order_status=$update_id";
+		// $query = $this->_custom_query($mysql_query);
 		$data['query'] = $this->get('item_title');
 
 		$data['flash'] = $this->session->flashdata('item');

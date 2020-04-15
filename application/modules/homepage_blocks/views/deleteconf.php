@@ -14,7 +14,7 @@ if (isset($flash)) {
 			</div>
 		</div>
 		<div class="box-content">
-			<p>Are you sure that you want to delete the block offer block.</p>
+			<p>Are you sure that you want to delete the block offer block?</p>
 
 
 			<?php

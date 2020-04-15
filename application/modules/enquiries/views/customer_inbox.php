@@ -5,6 +5,7 @@ if (isset($flash)) {
 }
 $create_msg_url =base_url()."yourmessages/create"
 ?>
+
 <p style="margin-top: 30px">
 <a href="<?= $create_msg_url ?>"><button class="btn btn-large btn-success" type="submit">Compose Message </button></a>
 </p>

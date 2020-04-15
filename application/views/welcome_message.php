@@ -5,7 +5,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
-
 	<style type="text/css">
 
 	::selection { background-color: #E13300; color: white; }
@@ -17,6 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		color: #4F5155;
 	}
+
 
 	a {
 		color: #003399;
@@ -66,7 +66,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 </head>
 <body>
-
 <div id="container">
 	<h1>Welcome to CodeIgniter!</h1>
 
@@ -81,9 +80,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
-
+<!-- hello -->
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
-
 </body>
 </html>

@@ -1,4 +1,16 @@
 /* Credit to bootsnipp.com for the css for the color graph */
+
+.login_body{
+
+  background-image: url("../img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
 .colorgraph {
   height: 5px;
   border-top: 0;

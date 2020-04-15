@@ -1,5 +1,4 @@
 
-
 <div class="breadcrumbs-area section-padding">
 	<div class="row">
 		<div class="col-md-12">
@@ -58,10 +57,10 @@
 
 						?>
 
-						<div class="col-md-3 col-sm-4 col-xs-12">
-							<div class="single-product mb-40">
-								<div class="product-img-content mb-20">
-									<div class="product-img">
+						<div class="col-md-3 col-sm-4 col-xs-12 pb-50">
+							<div class="single-product">
+								<div class="product-img-content mb-0 ">
+									<div class="slider-for product-img">
 										<a href="<?= $item_page?>">
 											<img src="<?= $small_pic_path?>" alt="<?=$item_title?>">
 										</a>
@@ -77,7 +76,20 @@
 										<a href="#" title="Add to Wishlist">
 											<i class="zmdi zmdi-favorite"></i>
 										</a>
+
 									</div>
+									<div class="slider-nav product_gallery text-center">
+
+										<img  src="<?= base_url()?>assets/public_template/images/banner/1.jpg"> 
+										<img  src="<?= base_url()?>assets/public_template/images/banner/1.jpg"> 
+										<img  src="<?= base_url()?>assets/public_template/images/banner/1.jpg"> 
+										<img  src="<?= base_url()?>assets/public_template/images/banner/1.jpg"> 
+										<img  src="<?= base_url()?>assets/public_template/images/banner/1.jpg"> 
+										<img  src="<?= base_url()?>assets/public_template/images/banner/1.jpg"> 
+
+									</div>
+
+
 								</div>
 								<div class="product-content text-center text-uppercase">
 									<a href="<?= $item_page?>"><p style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"><?=$item_title?></p></a>
@@ -132,13 +144,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3 hidden-xs">	
-            
+
 			</div>
 			<div class="col-sm-3 hidden-xs">	
-            
+
 			</div>
 			<div class="col-sm-3 hidden-xs">	
-            <?= $pagination?>
+				<?= $pagination?>
 			</div>	
 		</div>
 	</div>

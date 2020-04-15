@@ -229,7 +229,7 @@ function view($update_id)
 				if (is_numeric($update_id)) {
 					//update homepage offer
 					$this->_update($update_id, $data);
-					$flash_msg = "The Homepage Offer details were  successfully updated.";
+					$flash_msg = "The homepage offer details was  successfully updated.";
 					$value ='<div class="alert alert-success" role="alert">'.$flash_msg.'</div>';
 					$this->session->set_flashdata('item', $value);
 					redirect('homepage_blocks/create/' . $update_id);
@@ -238,7 +238,7 @@ function view($update_id)
 
 					$this->_insert($data);
 					$update_id = $this->get_max();
-					$flash_msg = "The cat was  successfully added.";
+					$flash_msg = "The homepage offer was  successfully added.";
 					$value ='<div class="alert alert-success" role="alert">'.$flash_msg.'</div>';
 					$this->session->set_flashdata('item', $value);
 					redirect('homepage_blocks/create/' . $update_id);

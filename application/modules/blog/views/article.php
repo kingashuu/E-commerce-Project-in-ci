@@ -27,7 +27,6 @@ $this->load->module('timedate');
 		}
 ?>
 
-
 	
 <!-- End Of Breadcrumbs Area -->
 <!-- Start page content -->
@@ -39,9 +38,9 @@ $this->load->module('timedate');
 				<div class="col-md-9 col-md-push-3 col-xs-12">
 					<div class="single-blog fix">
 						<div class="post-thumbnail mb-50 b-img">
-							<a href="blog-details.html">
-								<img src="<?= $thumbnail_path?>" alt="<?= $page_title?>" style="width: 100%;" class="img-r">
-							</a>
+							<a href="#">
+								<img src="<?= $thumbnail_path?>" alt="<?= $page_title?>" class="img-responsive" width: 100%>
+			 				</a>
 						</div>
 						<div class="postinfo-wrapper pl-100">
 							<div class="post-date text-uppercase ptb-10">
@@ -49,7 +48,7 @@ $this->load->module('timedate');
 							</div>
 							<div class="post-info ">
 								<h3 class="blog-post-title mb-20 text-uppercase">
-									<a href="blog-details.html"><?= $page_title?></a>
+									<a href="#"><?= $page_title?></a>
 								</h3>
 								<div class="entry-meta ptb-10 mb-30 text-uppercase">
 									Posted by

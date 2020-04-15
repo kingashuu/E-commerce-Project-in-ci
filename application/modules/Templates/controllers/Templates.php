@@ -27,6 +27,7 @@ class Templates extends MX_Controller
 			$data['view_module'] = $this->uri->segment(1);
 		}
 		$this->load->view('login_page', $data);
+		
 	}
 	 function public_bootstrap($data)
 	{

@@ -346,6 +346,7 @@ if (isset($sort_this)) {
 					  echo Modules::run('store_order_status/_draw_left_nav_links');
 					 ?>
 					<li><a href="<?=base_url()?>store_order_status/manage"><i class="halflings-icon white list-alt"></i><span class="hidden-tablet"> Order Status Options</span></a></li>
+					<li><a href="<?=base_url()?>sliders/manage"><i class="halflings-icon white icon-picture"></i><span class="hidden-tablet"> Manage Slider's</span></a></li>
 					<li><a href="<?php echo base_url();?>enquiries/inbox"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
 					<li><a href="<?= base_url()?>store_items/manage"><i class="icon-tag"></i><span class="hidden-tablet"> Manage Item</span></a></li>
 					<li><a href="<?= base_url()?>store_categories/manage"><i class="icon-align-justify"></i><span class="hidden-tablet"> Manage Categories</span></a></li>

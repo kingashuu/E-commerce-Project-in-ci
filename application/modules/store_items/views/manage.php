@@ -45,7 +45,7 @@ $create_item_url =base_url()."store_items/create"
 					?>
 					<tr>
 						<td><?= $row->id?></td>
-						<td>
+						<td style="width: 100px;">
 							<?php 
 						if ($row->small_pic!='') {?>
 							<img src="<?= base_url();?>small_pics/<?= $row->small_pic?>" style="width: 100px; height: 100px;">
@@ -55,7 +55,8 @@ $create_item_url =base_url()."store_items/create"
 						}
 						?>
 						</td>
-						<td><?= $row->item_title?></td>
+						<td><p style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 500px"> <?= $row->item_title?></p>
+							</td>
 						<td class="center"><?= $row->item_price?></td>
 						<td class="center"><?= $row->was_price?></td>
 						<td class="center">

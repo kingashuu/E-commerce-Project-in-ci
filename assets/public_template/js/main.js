@@ -55,9 +55,12 @@ NOTE: If you have any note put here.
     pauseTime: 5000,
     startSlide: 0,
     directionNav: true,
+    controlNav:true,
     controlNavThumbs: true,
     pauseOnHover: false,
-    manualAdvance: true,
+    manualAdvance: false,
+    randomStart:false,
+
   });
 
   /*-------------------------------------------
@@ -79,12 +82,44 @@ NOTE: If you have any note put here.
   /*-------------------------------------------
   04. slick carousel 
   --------------------------------------------- */
-  $('.your-class').slick({
-    slidesToShow: 3,
+
+/*$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});*/
+
+  // $('.slider-nav').slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   //arrows: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   asNavFor: '.slider-for',
+  //   dots: false,
+  //   focusOnSelect: true
+  // });
+   $('.slider-nav').slick({
+    slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: true,
+    dots:true,
     autoplay: true,
     autoplaySpeed: 2000
   });
+
+ $('.prodact_gallery').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+
+
 
 
     /*************************
@@ -116,7 +151,7 @@ NOTE: If you have any note put here.
   Testimonial List owl active
   ------------------------------ */  
   $(".testimonial-list").owlCarousel({
-    autoPlay: false, 
+    autoPlay: true, 
     slideSpeed:2000,
     pagination:true,
     animateOut: 'slideOutDown',
@@ -129,11 +164,12 @@ NOTE: If you have any note put here.
     itemsMobile: [479,1]
   });
 
+
   /*----------------------------
   owl active Deal products 
   ------------------------------ */  
   $(".brand-list").owlCarousel({
-    autoPlay: false, 
+    autoPlay: true, 
     slideSpeed:2000,
     pagination:false,
     navigation:false,   
@@ -165,7 +201,21 @@ NOTE: If you have any note put here.
   /*---------------------
   venobox
   --------------------- */
-  $('.venobox').venobox(); 
+  var test=$('.venobox').venobox(); 
+   // close current item clicking on .closeme
+    $(document).on('click', '.closeme', function(e){
+        test.VBclose();
+    });
+
+    // go to next item in gallery clicking on .next
+    $(document).on('click', '.next', function(e){
+        test.VBnext();
+    });
+
+    // go to previous item in gallery clicking on .previous
+    $(document).on('click', '.previous', function(e){
+        test.VBprev();
+    })
 
   
   /*----------------------------
@@ -204,3 +254,5 @@ NOTE: If you have any note put here.
       $('#sticky-header').removeClass("sticky");
     }
   });
+
+

@@ -1,7 +1,7 @@
 <h1>welcome to admin dashboard</h1>
 <p>
 	<?php 
-	echo anchor('admin_dvilfs/logout','Logout');
+	echo anchor('admin_login/logout','Logout');
 	 ?>
 </p>		
 			

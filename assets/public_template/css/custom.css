@@ -16,3 +16,14 @@ Note: This is the file where you can add your custom styles to change the look o
 -------------------------------------------------------*/
 
 /* Credit to bootsnipp.com for the css for the color graph */
+/* customer top panel */
+
+.tab-pane img{
+	/*height: 576px;*/
+	max-height: 610px
+}
+
+.pro-view img{
+	width: 104px;
+	height: 128px;
+}

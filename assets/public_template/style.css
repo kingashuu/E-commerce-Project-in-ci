@@ -22,7 +22,7 @@
     6.3 Custom-content all
   7. Home Page css 
     7.1 Banner css
-    7.2 roduct List Area CSS
+    7.2 product List Area CSS
     7.3 Support Area CSS
     7.4 Testimonial Area CSS
     7.5 Blog CSS
@@ -43,9 +43,9 @@
   15. 404 page css
   16. Blog Details Page css
   17. Blog Two Page css
------------------------------------------------------------------------------------*/
+  -----------------------------------------------------------------------------------*/
 
-/*----------------------------------------*/
+  /*----------------------------------------*/
 /*  5. Google Fonts
 /*----------------------------------------*/
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,500,600,700|Roboto:300,400,500,700';
@@ -117,15 +117,15 @@
 /*  6.3 Custom-content all  
 /*----------------------------------------*/
 .boxed-layout .wrapper {
-    box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
-    margin: auto;
-    position: relative;
-    width: 1240px;
+  box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+  margin: auto;
+  position: relative;
+  width: 1240px;
 }
 .boxed-layout .sticky {
-    left: auto;
-    margin: auto;
-    width: 1240px;
+  left: auto;
+  margin: auto;
+  width: 1240px;
 }
 /*----------------------------------------*/
 /*  7 Home Page CSS
@@ -249,6 +249,8 @@
 }
 .product-img-content {
   position: relative;
+
+  
 }
 .rating-icon i {
   color: #fac62a;
@@ -258,43 +260,62 @@
   font-weight: 500;
 }
 .product-content a:hover {
+
   color: #01a6a9;
+
 }
-.single-product:hover .product-img img {
+/* .single-product:hover .product-img img {
   box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.13);
-}
-.product-img img {
-  transition: all 0.4s ease 0s;
-  width: 100%;
-}
-.product-img a::before {
-  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-  bottom: 10px;
-  content: "";
-  left: 10px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  transform: scale(0);
-  transition: all 300ms ease 0s;
-}
-.product-img a {
-  display: block;
-  position: relative;
-}
-.single-product:hover .product-img a:before {
+  } */
+  .product-img img {
+    width: 100%;
+    height: 330px;
+    transition: all 0.4s ease 0s;
+
+  }
+  .product-img a::before {
+    background: rgba(0, 0, 0, 0.19) none repeat scroll 0 0;
+    bottom: 5px;
+    content: "";
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: scale(0);
+    transition: all 300ms ease 0s;
+  }
+  .product-img a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .single-product{
+    border: 1px solid rgb(255,255,255);
+    /*padding-top: 50px;*/
+
+  }
+
+  .single-product:hover{
+   overflow:hidden;
+   border: 1px solid rgb(0,0,0); 
+   /*box-shadow: 0 0 30px 6px rgba(1,166,169, 0.3);*/
+   -moz-box-shadow: 0 0 10px 5px #888;
+   -webkit-box-shadow: 0 0 10px 5px#888;
+   box-shadow: 0 0 10px 5px #888
+ }
+ .single-product:hover .product-img a:before {
   transform: scale(1);
 }
 .product-action {
   background: #ffffff none repeat scroll 0 0;
-  border-radius: 2px;
+  border-radius: 1px;
   left: 0;
   margin: 0 auto;
   opacity: 0;
   padding: 5px 0;
   position: absolute;
   right: 0;
-  top: 68%;
+  top: 78%;
   transform: scale(1);
   transition: all 0.3s ease 0s;
   visibility: hidden;
@@ -321,6 +342,22 @@
   opacity: 1;
   visibility: visible;
 }
+.product_gallery{
+  /* padding-top: 10px; */
+  visibility: hidden;
+
+}
+.product_gallery img{
+  width: 60px;
+  height: 50px;
+  padding-right: 5px;
+  padding-left: 5px
+}
+.single-product:hover .product_gallery{
+  margin-top: 0px;
+  visibility: visible;
+
+}
 .product-price span{
   font-weight: 500;
 }
@@ -339,7 +376,7 @@
 /*  7.3 Support Area CSS
 /*----------------------------------------*/
 .service-area {
-  background: rgba(0, 0, 0, 0) url("images/support.jpg") no-repeat fixed center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../img/women-watch-4980859_1920.jpg") no-repeat fixed center center / cover ;
 }
 .service-area .single-item i {
   border: 1px solid #01a6a9;
@@ -426,6 +463,7 @@
 }
 .offer-banner img {
   width: 100%;
+  height: 755px
 }
 .product-cuntdown {
   bottom: 125px;
@@ -469,7 +507,7 @@
 /*  7.4 Testimonial Area CSS
 /*----------------------------------------*/
 .testimonial-area #particles-js {
-  background: rgba(0, 0, 0, 0) url("images/testimonial/bg.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../img/friends-3175059_1920.jpg") no-repeat scroll center center / cover ;
   position: relative;
   width: 100%;
 }
@@ -648,7 +686,15 @@
 /*  8. Breadcrumbs Area CSS
 /*----------------------------------------*/
 .breadcrumbs-area {
-  background: rgba(0, 0, 0, 0) url("images/breadcrumb.jpg") no-repeat scroll center center;
+  background: rgba(0, 0, 0, 0) url("../img/breadcrumbs-area.jpg") no-repeat scroll center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 .breadcrumbs h3 {
   font-weight: 600;
@@ -762,14 +808,14 @@
 /*----------------------------------------*/
 .treeview li { position: relative }
 .treeview .hitarea {
-    cursor: pointer;
-    height: 40px;
-    line-height: 40px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 40px;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 40px;
 }
 .hitarea.expandable-hitarea::before {
   color: #999999;
@@ -1125,9 +1171,9 @@
   border-bottom: 2px solid #fff;
 }
 .product-remove a {
-  background: #fff none repeat scroll 0 0;
-  border-radius: 3px;
-  color: #606060;
+  background: #f1685e none repeat scroll 0 0;
+  border-radius: 20px;
+  color: #ffffff;
   display: block;
   font-size: 16px;
   line-height: 30px;
@@ -1144,8 +1190,21 @@
   width: 200px;
 }
 .product-value > input {
-  border: 1px solid #ececec;
-  width: 40%;
+  text-align: center;
+  padding-left: 2px
+  border: 2px solid #01a6a9;
+  width: 60px;
+  height: 40px;
+
+}
+.product-value >button{
+  border: 1px solid #01a6a9;
+  background-color: #01a6a9;
+  color: #ffffff;
+  font-size: 16px;
+  width: 35px;
+  height: 40px;
+
 }
 .cart-show-label select {
   height: 34px;

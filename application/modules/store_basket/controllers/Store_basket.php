@@ -100,6 +100,7 @@ function add_to_basket()
         }
     }
 }
+
 function _fetch_the_data()
 {
     $this->load->module('site_security');   

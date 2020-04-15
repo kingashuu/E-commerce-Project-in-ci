@@ -13,18 +13,18 @@
 						$parent_cat_title=$value;
 
 						?>
-						<li><a href="<?php echo base_url();?>assets/public_template/blog.html"><?= $parent_cat_title?></a>
+						<li><a href="#"><?= $parent_cat_title?></a>
 							<ul class="dropdown header-top-hover ptb-10">
 
 								<li>
-										<?php
-								$query=$this->store_categories->get_where_custom('parent_cat_id', $parent_cat_id);
-								foreach ($query->result() as $row) {
-									$cat_url=$row->cat_url;
-									echo '<a href="'.$start_of_target_url.$cat_url.'">'.$row->cat_title.'</a>';
-								}
-								?>
-									</li>
+									<?php
+									$query=$this->store_categories->get_where_custom('parent_cat_id', $parent_cat_id);
+									foreach ($query->result() as $row) {
+										$cat_url=$row->cat_url;
+										echo '<a href="'.$start_of_target_url.$cat_url.'">'.$row->cat_title.'</a>';
+									}
+									?>
+								</li>
 
 							</ul>
 						</li>

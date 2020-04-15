@@ -13,8 +13,6 @@ function get_table() {
 }
 
 
- 
-
 function get($order_by){
     $table = $this->get_table();
     $this->db->order_by($order_by);

@@ -1,4 +1,4 @@
-<h2>Manage Homepage Offer Block</h2>
+<h2>Manage Homepage Offer</h2>
 <?php
 if (isset($flash)) {
 	echo $flash;
