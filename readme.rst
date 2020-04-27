@@ -1,4 +1,17 @@
 ###################
+This is E-commerce web app project using Codeigniter framework and HMVC 
+###################
+
+**********************
+ADMIN
+**********************
+localhost/cishop/admin_login
+
+username:admin
+
+password;adminpass
+
+###################
 What is CodeIgniter
 ###################
 
