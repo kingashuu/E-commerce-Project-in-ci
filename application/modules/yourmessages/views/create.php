@@ -1,8 +1,12 @@
 <?php 
 $form_location= current_url(); 
 ?>
+<section id="page-content" class="page-wrapper">
+  <!-- Start Wishlist Area -->
+  <div class="wishlist-area section-padding">
+    <div class="container ">
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-12">
     <h2><?= $headline ?></h2>
     <?php 
     echo validation_errors("<p style='color:red;'>", "</p>");
@@ -26,7 +30,8 @@ $form_location= current_url();
     </div>
     <div class="checkbox">
       <label>
-        <input name="urgent" value="1" type="checkbox"><?php 
+        <input name="urgent" value="1" type="checkbox">
+        <?php 
         if ($urgent==1) {
          echo "checked";
        }
@@ -39,3 +44,6 @@ $form_location= current_url();
  </form>
 </div>
 </div>
+</div>
+</div>
+</section>

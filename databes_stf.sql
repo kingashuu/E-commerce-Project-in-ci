@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2020 at 01:47 AM
+-- Generation Time: Apr 27, 2020 at 07:11 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -48,6 +48,29 @@ INSERT INTO `blog` (`id`, `page_url`, `page_title`, `page_keywords`, `page_descr
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `btm_nav`
+--
+
+CREATE TABLE `btm_nav` (
+  `id` int(11) NOT NULL,
+  `page_id` int(11) NOT NULL,
+  `priority` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `btm_nav`
+--
+
+INSERT INTO `btm_nav` (`id`, `page_id`, `priority`) VALUES
+(1, 2, 2),
+(2, 5, 3),
+(4, 4, 1),
+(6, 6, 4),
+(7, 3, 5);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `ci_sessions`
 --
 
@@ -63,25 +86,53 @@ CREATE TABLE `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
-('prlio936clrra1iqvt55feglctgeugb7', '::1', 1586898906, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363839383930363b69735f61646d696e7c733a313a2231223b),
-('dmscv2g5e1bjhkfbk3ua9pg7cons3j05', '::1', 1586899224, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363839393232343b69735f61646d696e7c733a313a2231223b),
-('t1cb6b5qjtgghd6e704a0s6n4vltc4t2', '::1', 1586899525, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363839393532353b69735f61646d696e7c733a313a2231223b),
-('3gtfgtrr7rvhssfupbga0hdd4ud0kcea', '::1', 1586899826, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363839393832363b69735f61646d696e7c733a313a2231223b6974656d7c733a39363a223c64697620636c6173733d22616c65727420616c6572742d737563636573732220726f6c653d22616c657274223e546865204974656d2064657461696c73207765726520207375636365737366756c6c7920757064617465642e3c2f6469763e223b5f5f63695f766172737c613a313a7b733a343a226974656d223b733a333a226f6c64223b7d),
-('oneg7tgnjbbp4q3518cokk58do262gm8', '::1', 1586900128, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930303132383b69735f61646d696e7c733a313a2231223b),
-('2b3apbedbrm06svfbmr5186f9h72eeho', '::1', 1586900491, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930303439313b69735f61646d696e7c733a313a2231223b),
-('hoe9grpa9gprnf8ev71tjf5cn428tvmd', '::1', 1586900954, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930303935343b69735f61646d696e7c733a313a2231223b),
-('bkb3pgtnqlsgmiroadnlbdccqbb899dm', '::1', 1586901263, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930313236333b69735f61646d696e7c733a313a2231223b),
-('se70t8uk8447rn9scj4g9pbctbrjh6eq', '::1', 1586901578, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930313537383b69735f61646d696e7c733a313a2231223b),
-('sfjubqiq84goa07i5btunk8pged20h5p', '::1', 1586901902, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930313930323b69735f61646d696e7c733a313a2231223b),
-('850t24rgahdc4nuksmo3rqcudfc2q7sq', '::1', 1586903428, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930333432383b69735f61646d696e7c733a313a2231223b),
-('ddvo5mithn3j0n2uq6dhiv00q6psb5hl', '::1', 1586903729, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930333732393b69735f61646d696e7c733a313a2231223b),
-('dr0s2nckbbop1m3nh9oineh9jsr2moq4', '::1', 1586904380, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930343338303b69735f61646d696e7c733a313a2231223b),
-('jf6iiebe4b8a3h3r01kee79ld3nnn4se', '::1', 1586904687, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930343638373b69735f61646d696e7c733a313a2231223b),
-('phj2ukk5umdum6mi9to99ejkeav37o51', '::1', 1586904991, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930343939313b69735f61646d696e7c733a313a2231223b),
-('i9rm3pf6c4fbu0qbsi06gc5nrbf8s16i', '::1', 1586905301, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930353330313b69735f61646d696e7c733a313a2231223b),
-('vdebgrcq0s2cg93epdjgl0k8vqgsufk9', '::1', 1586905677, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930353637373b69735f61646d696e7c733a313a2231223b),
-('kf5gols0t1ef1r59d2fc7rupib5qn43n', '::1', 1586906036, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930363033363b69735f61646d696e7c733a313a2231223b),
-('pac8s86aa8489dilp5n9kd4696m3f24f', '::1', 1586906171, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538363930363033363b69735f61646d696e7c733a313a2231223b);
+('7tnbhooac232qunk4s1l684vh3uc0hg8', '::1', 1587784568, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738343536383b757365725f69647c733a313a2231223b),
+('ha1og91lhe408om6p1h0ai8t1k23ff27', '::1', 1587784870, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738343837303b757365725f69647c733a313a2231223b),
+('0eob877c6js37n1enpk1qimc3imkbde8', '::1', 1587785549, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738353534393b757365725f69647c733a313a2231223b),
+('g8lbt5uuia0s5rl6hdceb3um4af3l4gi', '::1', 1587786068, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738363036383b757365725f69647c733a313a2231223b),
+('iehf7klmd5npk7pvrdo64qsro3crt8v2', '::1', 1587786482, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738363438323b757365725f69647c733a313a2231223b),
+('huefe0dui7hcg5gs5bn2tpa8omno1nuj', '::1', 1587786788, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738363738383b757365725f69647c733a313a2231223b),
+('0e5rhleel6jvmb1ou0cvnbgctscu7jif', '::1', 1587787173, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738373137333b757365725f69647c733a313a2231223b),
+('j3u63klthq10hruj42dm40qufgameet3', '::1', 1587788278, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738383237383b757365725f69647c733a313a2231223b),
+('15g7jkgvt4l1l7knko03u30jk355r4b3', '::1', 1587789235, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738393233353b757365725f69647c733a313a2231223b),
+('dkhgqidjkbejq4lrpqqdedp3fbtp5quj', '::1', 1587789778, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373738393737383b757365725f69647c733a313a2231223b),
+('uqmeqbjljiq9abqjbmvianmt9k8dfv3i', '::1', 1587790098, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739303039383b757365725f69647c733a313a2231223b),
+('cvi2rn949d1v6t7j80uaue99oor7qejo', '::1', 1587790537, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739303533373b757365725f69647c733a313a2231223b),
+('bsui7jglfrjb6kd7a91nbh23iihjso3a', '::1', 1587790571, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739303533373b757365725f69647c733a313a2231223b),
+('eeneh4qm78ulbm40i9mpmk0o9mrrn8jq', '::1', 1587791069, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739313036393b),
+('hsuca6b7hrgntqed4hd7nqmno4prjf86', '::1', 1587791397, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739313339373b),
+('ccvsejetmmfg928sec8f54ibih2o6ok8', '::1', 1587791729, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739313732393b757365725f69647c733a313a2231223b),
+('rns6fdfdd1rb0vk7gjf4n9s0parno1r4', '::1', 1587792067, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739323036373b757365725f69647c733a313a2231223b),
+('41vgvdvbj7277hckn7fpg67ot2gn9n1h', '::1', 1587792420, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739323432303b),
+('f3m4lfhip5dov3lg5ej46amv8l64vn0o', '::1', 1587792692, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373739323432303b),
+('vnvob7n9fmh2kdpbdsuttoid6mhf63pc', '::1', 1587845719, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834353731393b),
+('55nttalq5f6e2bd6b243o42uek4iujco', '::1', 1587846484, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834363438343b69735f61646d696e7c733a313a2231223b),
+('kashipf9lhrp6i7t01roan5kvdouchsi', '::1', 1587847083, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834373038333b69735f61646d696e7c733a313a2231223b),
+('0hvug4fndcv1n1grq6jjpn12jip5tej7', '::1', 1587847470, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834373437303b69735f61646d696e7c733a313a2231223b),
+('s8ivccvqqb6pse4eumq7t4imb6tlo46q', '::1', 1587847861, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834373836313b69735f61646d696e7c733a313a2231223b),
+('mjmlfm2p3ibm9ptls0hdevq62co5fccs', '::1', 1587848260, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834383236303b69735f61646d696e7c733a313a2231223b),
+('0koge6f13hq0f54kqga1717150odim68', '::1', 1587848943, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834383934333b69735f61646d696e7c733a313a2231223b),
+('ocu1qme9sh29gm605d9anbaajst92qjo', '::1', 1587849689, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373834393638393b69735f61646d696e7c733a313a2231223b),
+('5m4347la0b98kt4qtium748asqmtlh9n', '::1', 1587850054, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835303035343b69735f61646d696e7c733a313a2231223b),
+('f3namlrl12d95nq9f64632lpsce1e54m', '::1', 1587852755, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835323735353b69735f61646d696e7c733a313a2231223b),
+('o8cfocire2dsrcjbqt1969g5v14dci79', '::1', 1587853223, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835333232333b69735f61646d696e7c733a313a2231223b),
+('vdtmo5mmdudg7ir485ma913tpodg933t', '::1', 1587853588, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835333538383b69735f61646d696e7c733a313a2231223b),
+('m1fcre50p487ac4l9udipetv2rdu6d72', '::1', 1587853944, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835333934343b69735f61646d696e7c733a313a2231223b),
+('ve7k5u50arv06t5fm1kp5o81335a2a9c', '::1', 1587854285, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835343238353b69735f61646d696e7c733a313a2231223b),
+('t4d7mph3d0j4o289rkhohrghcts9qb4m', '::1', 1587856535, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835363533353b69735f61646d696e7c733a313a2231223b),
+('5lsplanih23adro6kt14719sui03oe9t', '::1', 1587856857, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835363835373b69735f61646d696e7c733a313a2231223b),
+('rsd535rfngm7q60ro8fbve2fc7t2flhq', '::1', 1587857164, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835373136343b69735f61646d696e7c733a313a2231223b),
+('9qt46jcs54r62ocatt4dljqokgvcpkbi', '::1', 1587857897, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835373839373b69735f61646d696e7c733a313a2231223b),
+('f1lp643avu1f8bm16ekqkbr24im2r9i7', '::1', 1587858523, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835383532333b69735f61646d696e7c733a313a2231223b),
+('pj1992sas0c2uk21o4kc2a94c74g8duk', '::1', 1587859127, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835393132373b69735f61646d696e7c733a313a2231223b),
+('h4cjqnk36ndtd87ctus7i0a63mkd2e8k', '::1', 1587859477, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373835393437373b69735f61646d696e7c733a313a2231223b),
+('589d22g56mqdtdu5b21525ddlmespm7c', '::1', 1587860123, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836303132333b69735f61646d696e7c733a313a2231223b),
+('ieldmbenhoef2qpk5d9t4mbh02sqa4n0', '::1', 1587860434, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836303433343b69735f61646d696e7c733a313a2231223b),
+('594i61fthupudi0gnd691jtljgfure3n', '::1', 1587860847, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836303834373b69735f61646d696e7c733a313a2231223b),
+('chm81tckort52qn3otn6b1h92o50s4sd', '::1', 1587862162, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836323136323b69735f61646d696e7c733a313a2231223b),
+('7p6rpmv2jlu31dk9g2lr77k4rpe0aqfm', '::1', 1587862703, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836323730333b69735f61646d696e7c733a313a2231223b),
+('p43sviqsbkjkjrorvovipa05oounrrg0', '::1', 1587863023, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836333032333b69735f61646d696e7c733a313a2231223b),
+('jbqaefuheuddki8i5lo9uhotq1rb9fr4', '::1', 1587863318, 0x5f5f63695f6c6173745f726567656e65726174657c693a313538373836333032333b69735f61646d696e7c733a313a2231223b);
 
 -- --------------------------------------------------------
 
@@ -131,8 +182,10 @@ INSERT INTO `enquiries` (`id`, `date_created`, `sent_by`, `sent_to`, `subject`, 
 (1, 1583444757, 1, 0, 'help', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\r\n\r\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.', 1, '4WVzlR', 1, 1),
 (2, 1583444882, 0, 1, ' help', '                so whatt is the problem<br><br>\r\n            _________________________________________<br>\r\n            The original message is shown below:<br>', 1, 'xEP5Yn', 0, 0),
 (3, 1584745526, 1, 0, ' help', '\r\n---------------------------------------------------\r\n                so whatt is the problem\r\n\r\n\r\n            _________________________________________\r\n\r\n            The original message is shown below:\r\nhello', 1, 'uBgHCV', 0, 0),
-(4, 1584915093, 0, 1, 'Order Status Update', 'Order  has just been updated. The new status fore your order is Order received.', 0, '6EGcfg', 0, 0),
-(5, 1584915434, 0, 1, ' test', '<div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed><br></span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed><br></span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span></font></div>                              ', 1, 'VwrFbG', 0, 0);
+(4, 1584915093, 0, 1, 'Order Status Update', 'Order  has just been updated. The new status fore your order is Order received.', 1, '6EGcfg', 0, 0),
+(5, 1584915434, 0, 1, ' test', '<div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed><br></span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed><br></span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span></font></div>                              ', 1, 'VwrFbG', 0, 0),
+(6, 1587761302, 1, 0, ' test', '\r\n---------------------------------------------------\r\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\r\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\r\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.                              ', 0, 'JeqazX', 0, 0),
+(7, 1587762657, 1, 0, ' test', 'hi\r\n---------------------------------------------------\r\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\r\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\r\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.                              ', 0, 'GmcNQY', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -330,7 +383,7 @@ CREATE TABLE `store_accounts` (
 --
 
 INSERT INTO `store_accounts` (`id`, `firstname`, `lastname`, `company`, `address1`, `address2`, `twon`, `country`, `postcode`, `telnum`, `email`, `date_made`, `pword`, `username`, `last_login`) VALUES
-(1, 'jhon', 'rambo', 'hollewod', 'usa', 'uk', 'dd', 'ethiopia', '123456', '0 123 456 789', 'abekele76@gmail.com', 1583359598, '$2y$11$O3X5iiFwcKUmxia8UI2xpeXL3B38mfgodPM9InIU9xtZSYqXCiVLO', 'rambo', 1586896036),
+(1, 'jhon', 'rambo', 'hollewod', 'usa', 'uk', 'dd', 'ethiopia', '123456', '0 123 456 789', 'abekele76@gmail.com', 1583359598, '$2y$11$O3X5iiFwcKUmxia8UI2xpeXL3B38mfgodPM9InIU9xtZSYqXCiVLO', 'rambo', 1587791445),
 (2, 'Guest', 'Account', '', '', '', '', '', '', '', '', 1583360075, 'b1f8c967deba9bbcb406bf936853c4463ed42a832d0b95082ea9a1d5566d6f93a7d1d5a14f24d7711656b2d77a4b8e17a766a20515bb0d0c5f12e146b75215fctJ9l4b58fQPDCyrSSRh7qA6tfgMYDgOmlVw5G-frwd-9NuWrdZO6CfMDToLKdY-plus-lZG1U9KBfv6v6kOb52gFR9F-frwd-ykWQ-eqls--eqls-', 'Guest_tBps', 0),
 (3, 'Guest', 'Account', '', '', '', '', '', '', '', '', 1583380294, '7bab6e4498921909a7488cc8fe2c4580e0c7b606c86618314773ce640ed676f7b0707cf64ed03bf058d052e1bb4e9d6ffd97ab61ce75a3f7c7aa90fb397ec5c8oPA-plus-wGRVlwauP3QbopGdqZ1toDhR8vovwrvDBO0ovaAlR1bIMdEs18z7g3m5Gm0VsakMg4AEXZCBICpHj7SNHw-eqls--eqls-', 'Guest_dZMp', 0),
 (4, 'Guest', 'Account', '', '', '', '', '', '', '', '', 1583380616, '46e36a4348cb91a0d0903aa2a67442502a48af83715dbc6bc3acf6e07e4d877b819cdf8a179025d759b8e4da6d40f554f571a48377c0cf684f67f44d167c92b7md115ULYKwkhxOjhR1-frwd-3stJj4Hz8hgP-plus-b3cv5ebXNoYQZ7Oyy3NP6KVDjFd37Fty0h-frwd-YsFVNWyHyX76qBRD1cg-eqls--eqls-', 'Guest_6Ldl', 0),
@@ -349,7 +402,8 @@ INSERT INTO `store_accounts` (`id`, `firstname`, `lastname`, `company`, `address
 (17, 'Guest', 'Account', '', '', '', '', '', '', '', '', 1586370424, '708251c974f090c01c01a62ab20da37008bf7a9d584b71f40c17bed79066226c477134b357483b13bb64e031738c49b2bf4091fbb639284c386a4d4cb3385bebDKvN-plus-XygDWHbFh-plus-GAYHSQnYjFVTbPHA5naxE5BobObArf261Wnsk84-frwd-RqKO21S9InHKS-frwd-6m4zbCgIzQdLiO-frwd-Rw-eqls--eqls-', 'Guest_dYqg', 0),
 (18, 'Guest', 'Account', '', '', '', '', '', '', '', '', 1586480287, '3bef8c2dda00d82e7e81bb0b6c528ef88fb3600fba00656c7b6926c2e4cada4a59827b1a6bd8d57a3e7b29e2c8f84e75374aa95ac305b6199723d477c8e6a3a89KRByyc8RNYB6KQe9fkq9DpjyALw5oDfETx00RL-plus-57-plus-hW1tvrhMDqVhez661IZTOOWbxmib5nRQ9-frwd-3SAko6KGg-eqls--eqls-', 'Guest_tlwV', 0),
 (19, '', '', '', '', '', '', '', '', '', 'jhon123@gmail.com', 0, '$2y$11$KSV.i/lD5.ObcLxG8M.8oOvtNrKk1wvi47GzsZOD9YdjR9rnxfBcy', 'jhon', 1586895664),
-(20, '', '', '', '', '', '', '', '', '', 'a@gmail.com', 0, '$2y$11$32PPxYAKHZtB.I/Hhd4i/uBrASTgJRUwseUyMNBDQaEHeerOb8sEa', 'jhon', 0);
+(20, '', '', '', '', '', '', '', '', '', 'a@gmail.com', 0, '$2y$11$32PPxYAKHZtB.I/Hhd4i/uBrASTgJRUwseUyMNBDQaEHeerOb8sEa', 'jhon', 0),
+(21, 'Guest', 'Account', '', '', '', '', '', '', '', '', 1587756988, '1eed3cecfc9355b55ff92a65c94525e8314ffab1c3e28a5b28237a8acfa0204e856d3ca4446d3588a3df86b70c087ccdada5b1653a845cb2dd546a9b541193e0U-frwd-yYdEbIishmXU4K9mUBgTtpbwRpL5c1S0kXf3MA5SokndhFfeS2DwE1NDI0ltZhLyD7IRf27HB8ObDRDezKzQ-eqls--eqls-', 'Guest_4TxP', 0);
 
 -- --------------------------------------------------------
 
@@ -396,7 +450,6 @@ INSERT INTO `store_basket` (`id`, `session_id`, `item_title`, `price`, `tax`, `i
 (22, 'aod158uj4jc1v3nebkfo3jjcdo9gn3fv', 'Nike Air Foamposite One Air Force 1 Sports shoes Air Jordan', '1000.00', '0.00', 3, '', 2, '', 1584825626, 0, 0),
 (24, 'in7mvmr8gvknq400lp2sa0odnjbaj44k', 'the one', '700.00', '0.00', 1, '', 1, '', 1584826423, 0, 0),
 (25, 'in7mvmr8gvknq400lp2sa0odnjbaj44k', 'adidas superstar shoes with added durability and modern style', '1000.00', '0.00', 6, '', 1, '', 1584826450, 0, 0),
-(26, 'atj9u3lcmjbs78kb367u63s968jb31se', 'the one', '700.00', '0.00', 1, '', 2, '', 1584829595, 1, 0),
 (27, 'atj9u3lcmjbs78kb367u63s968jb31se', 'the one', '700.00', '0.00', 1, '', 2, '', 1584829627, 0, 0),
 (28, '3igs3b8mg60in268hnh0m2d8ag4f4kkm', 'Nike Air Foamposite One Air Force 1 Sports shoes Air Jordan', '1000.00', '0.00', 3, '', 2, '', 1584829931, 0, 0),
 (29, 'ualgdenqknsrtt0jq6t08c71n654sp20', 'Super Skinny Jeans with Gap max', '550.00', '0.00', 8, '', 2, '', 1584830271, 0, 0),
@@ -408,10 +461,6 @@ INSERT INTO `store_basket` (`id`, `session_id`, `item_title`, `price`, `tax`, `i
 (35, 'e8e789mocaqe9eafiv4tcum1audi09ah', 'adidas superstar shoes with added durability and modern style', '1000.00', '0.00', 6, '', 2, '', 1584901828, 0, 0),
 (36, 'anb7iit21m8jcckfcma868f3th1sf9s0', 'Nike Air Foamposite One Air Force 1 Sports shoes Air Jordan', '1000.00', '0.00', 3, '', 2, '', 1584902181, 13, 0),
 (37, '5o0m2o3ttcgno0m5f6km18slmnfqincp', 'Super Skinny Jeans with Gap max', '550.00', '0.00', 8, '', 2, '', 1584902572, 0, 0),
-(38, 'h45kg3omcs1sgcg5rn37j4rhk7s589t7', 'Super Skinny Jeans with Gap max', '550.00', '0.00', 8, '', 2, '', 1584903164, 1, 0),
-(39, '5l7f50u3lmbeqpeumj4bhoqb046f1uo1', 'the one 245', '700.00', '0.00', 2, '', 2, '', 1584904185, 1, 0),
-(78, 'sbomsqisgf1aclcfur3vrstifmuf9t3b', 'Nike Free Nike Air Max Sneakers Shoe, red shoes', '850.00', '0.00', 11, '', 2, '', 1584912691, 1, 0),
-(79, '31shk8pnt8e8v4212dphvu289qaqj9df', 'Nike Air Foamposite One Air Force 1 Sports shoes Air Jordan', '1000.00', '0.00', 3, '', 2, '', 1584919391, 1, 0),
 (80, 'o0iqoq8b4s5mf5bdticpsh8l126oqnk4', 'the one 245', '700.00', '0.00', 2, '', 2, '', 1585162444, 0, 0),
 (82, 'bk5hi4jdhhf4fsiomvgdfp83euvq6jub', 'the one', '700.00', '0.00', 1, '', 2, '', 1585450300, 15, 0),
 (83, 'dbrttq8e7fumpn1069uc2kmjeej1m08d', ' medium_alex-perry-black-arlett-velvet-collar-dress', '1000.00', '0.00', 82, '', 2, '', 1585514777, 16, 0),
@@ -447,10 +496,15 @@ INSERT INTO `store_basket` (`id`, `session_id`, `item_title`, `price`, `tax`, `i
 (117, 'aheue5uhro5e97eph3728uqn7v7nd2j2', 'the one', '700.00', '0.00', 1, '', 2, '', 1586370397, 17, 0),
 (118, '28nm78sp2fp9ftmvoi33rps5ck71f2tu', 'the one', '700.00', '0.00', 1, '', 2, '', 1586479868, 18, 0),
 (119, '28nm78sp2fp9ftmvoi33rps5ck71f2tu', 'Ethiopian_Dress,_Traditional_Handmade_embroidered_Habesha_Clothes', '2000.00', '0.00', 68, '', 2, '', 1586479977, 18, 0),
-(120, 'o859tvgano2vv6flcqcvd2jahe5ij3sg', 'Ivory_Rubie_pleated_floral-print_duchesse', '2500.00', '0.00', 79, '', 2, '', 1586480357, 1, 0),
 (121, '767s35c38sf4ec6sraud952ifmhgad09', 'Ethiopian_Dress,_Traditional_Handmade_embroidered_Habesha_Clothes10', '2500.00', '0.00', 76, '', 1, '', 1586536109, 0, 0),
 (122, 'egmo812ln1u3akskfiuehblbcvq4st7b', 'Women_Floral_Lace_Bridesmaid_Party_Dress_Short', '1000.00', '0.00', 56, '', 2, '', 1586896566, 0, 0),
-(123, 'ram2112esrfaq7d1llsnv5qm3mkbrfvo', ' Blush_Christie_Gown_by_Jay_Godfrey_for_65_-_90…', '3500.00', '0.00', 97, '', 2, '', 1586896768, 0, 0);
+(123, 'ram2112esrfaq7d1llsnv5qm3mkbrfvo', ' Blush_Christie_Gown_by_Jay_Godfrey_for_65_-_90…', '3500.00', '0.00', 97, '', 2, '', 1586896768, 0, 0),
+(124, '55ueppvdfq9sg7eait9jlavjm85c3ota', 'the one', '700.00', '0.00', 1, '', 2, '', 1587756968, 21, 0),
+(127, 'huefe0dui7hcg5gs5bn2tpa8omno1nuj', 'Super Skinny Jeans with Gap max', '550.00', '0.00', 8, '', 1, '', 1587786630, 1, 0),
+(128, 'huefe0dui7hcg5gs5bn2tpa8omno1nuj', 'Ethiopian_Dress,_Traditional_Handmade_embroidered_Habesha_Clothes1', '3500.00', '0.00', 67, '', 2, '', 1587786659, 1, 0),
+(129, 'uqmeqbjljiq9abqjbmvianmt9k8dfv3i', 'Ivory_Rubie_pleated_floral-print_duchesse', '2500.00', '0.00', 79, '', 100, '', 1587790008, 1, 0),
+(131, 'ccvsejetmmfg928sec8f54ibih2o6ok8', 'Alexandre Vauthier - One-shoulder ruched ribbed jersey gown', '650.00', '0.00', 93, '', 1000, '', 1587791490, 1, 0),
+(132, 'f3m4lfhip5dov3lg5ej46amv8l64vn0o', 'the one', '700.00', '0.00', 1, '', 2, '', 1587792430, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -501,7 +555,7 @@ INSERT INTO `store_categories` (`id`, `cat_title`, `cat_url`, `parent_cat_id`, `
 (39, 'mens Pants', 'mens-Pants', 3, 11),
 (40, 'mens shorts', 'mens-shorts', 3, 12),
 (43, 'mens shirt', 'mens-shirt', 3, 5),
-(44, 'Ethio Collection ', 'Ethio-Collection', 0, 0),
+(44, 'Ethio Collection ', 'Ethio-Collection', 0, 1),
 (45, 'Habesha dress ', 'Habesha-dress', 44, 0),
 (46, 'NIKE', 'NIKE', 7, 0);
 
@@ -1058,7 +1112,11 @@ CREATE TABLE `webpages` (
 
 INSERT INTO `webpages` (`id`, `page_url`, `page_title`, `page_keywords`, `page_description`, `headline`, `page_content`) VALUES
 (1, '', 'Home', '                                                            ', '                                                            ', '', '        <div xss=\"removed\"><span xss=removed>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></div>       '),
-(2, 'Contactus', 'Contactus', '', 'her is description ', '', 'This is the contact us content');
+(2, 'Contactus', 'Contactus', '', 'her is description ', '', 'This is the contact us content'),
+(3, 'Shipping-Method', 'Shipping Method', '         blu nlu blu                     ', '          hello frome same wher                     ', '', '        <div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\"><br></span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\"><br></span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span></font></div>                      '),
+(4, 'About-Us', 'About Us', 'about us                       ', ' hello from about us page                     ', '', '        <div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\"><br></span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\"><br></span></font></div><div xss=\"removed\"><font face=\"Arial, Verdana\"><span xss=\"removed\">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span></font></div>                      '),
+(5, 'Refund-Policy', 'Refund Policy', 'Refund Policy              ', 'hello from Refund Policy page               ', '', '<div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed><br></span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed><br></span></font></div><div xss=removed><font face=\"Arial, Verdana\"><span xss=removed>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span></font></div>               '),
+(6, 'Deal-of-the-day', 'Deal of the day', '         dfcghvjdbnkfl;gn                     ', '        dxfacvghbjnkml,;.                      ', '', '        fdgcvhmkl       ');
 
 --
 -- Indexes for dumped tables
@@ -1068,6 +1126,12 @@ INSERT INTO `webpages` (`id`, `page_url`, `page_title`, `page_keywords`, `page_d
 -- Indexes for table `blog`
 --
 ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `btm_nav`
+--
+ALTER TABLE `btm_nav`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1213,6 +1277,12 @@ ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `btm_nav`
+--
+ALTER TABLE `btm_nav`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
@@ -1222,7 +1292,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `enquiries`
 --
 ALTER TABLE `enquiries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `homepage_blocks`
@@ -1276,13 +1346,13 @@ ALTER TABLE `slides`
 -- AUTO_INCREMENT for table `store_accounts`
 --
 ALTER TABLE `store_accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `store_basket`
 --
 ALTER TABLE `store_basket`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT for table `store_categories`
@@ -1336,5 +1406,5 @@ ALTER TABLE `store_shoppertrack`
 -- AUTO_INCREMENT for table `webpages`
 --
 ALTER TABLE `webpages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;

@@ -1,5 +1,9 @@
+<section id="page-content" class="page-wrapper">
+	<!-- Start Wishlist Area -->
+	<div class="wishlist-area section-padding">
+	<div class="container ">
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-12">
 
 		<p style="margin-top: 24px;">Message Sent on <?= $date_created?></p>
 
@@ -13,3 +17,6 @@
 		<p><?= $message?></p>
 	</div>
 </div>
+</div>
+</div>
+</section>

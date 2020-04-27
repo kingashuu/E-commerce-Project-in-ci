@@ -32,7 +32,9 @@
                                                foreach ($query->result() as $row) {
                                                 $sub_total = $row->price*$row->item_qty;
                                                 $sub_total_desc= number_format($sub_total, 2);
-                                                $grand_total=$grand_total+$sub_total;               
+                                                $grand_total=$grand_total+$sub_total;
+                                            
+
                                                 ?>
                                                 <tr>
                                                     <td class="product-thumbnail">
@@ -76,20 +78,7 @@
                                                     <button type="button"  class="add">+</button>
                                                 </td>
 
-                                                <script type="text/javascript">
-                                                   $('.add').click(function () {
-                                                    /*if ($(this).prev().val() < 10000) {*/
-                                                        $(this).prev().val(+$(this).prev().val() + 1);
-                                                        /* }*/
-                                                    });
-                                                   $('.sub').click(function () {
-                                                    if ($(this).next().val() > 1) {
-                                                        if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-                                                    }
-                                                });
-
-
-                                            </script>
+                                               
                                             <td class="product-stock-status"><span class="wishlist-in-stock"><?= $sub_total_desc." ".$currency_symbol?> </span>
                                             </td>
                                             <td class="product-remove">
@@ -226,3 +215,17 @@
 </div>
 <!-- End Of Wishlist Area -->
 
+<script type="text/javascript">
+ $('.add').click(function () {
+    /*if ($(this).prev().val() < 10000) {*/
+        $(this).prev().val(+$(this).prev().val() + 1);
+        /* }*/
+    });
+ $('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+        if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+});
+
+
+</script>

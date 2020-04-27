@@ -47,7 +47,7 @@ echo form_hidden('shipping_'.$count, $shipping);
 </div> 
 <?php
 echo form_close();
-
+/*
 if ($on_test_mode==TRUE) {
 	echo "<div style='clear: both; text-align: center; margin-top: 24px;'>";
 	echo form_open('paypal/submit_test');
@@ -58,4 +58,4 @@ if ($on_test_mode==TRUE) {
 
 	echo form_close();
 	echo "</div>";
-}
+}*/

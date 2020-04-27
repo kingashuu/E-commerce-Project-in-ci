@@ -32,24 +32,24 @@
 	<!--[if IE 9]>
 		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
 	<![endif]-->
-		
+	
 	<!-- start: Favicon -->
 	<link rel="shortcut icon" href="<?php echo base_url();?>assets/admin/img/favicon.ico">
 	<!-- end: Favicon -->
 	
-		
-		
-		
+	
+	
+	
 </head>
 
 <body>
 	<?php
 //to include class
-if (isset($sort_this)) {
-	require_once('sort_this_code.php');
-}
-?>
-		<!-- start: Header -->
+	if (isset($sort_this)) {
+		require_once('sort_this_code.php');
+	}
+	?>
+	<!-- start: Header -->
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container-fluid">
@@ -59,7 +59,7 @@ if (isset($sort_this)) {
 					<span class="icon-bar"></span>
 				</a>
 				<a class="brand" href="<?php echo base_url();?>assets/admin/index.html"><span>CI SHOP</span></a>
-								
+				
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
 					<ul class="nav pull-right">
@@ -71,81 +71,81 @@ if (isset($sort_this)) {
 							</a>
 							<ul class="dropdown-menu notifications">
 								<li class="dropdown-menu-title">
- 									<span>You have 11 notifications</span>
+									<span>You have 11 notifications</span>
 									<a href="<?php echo base_url();?>assets/admin/#refresh"><i class="icon-repeat"></i></a>
 								</li>	
-                            	<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+								<li>
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon blue"><i class="icon-user"></i></span>
 										<span class="message">New user registration</span>
 										<span class="time">1 min</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
 										<span class="time">7 min</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
 										<span class="time">8 min</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
 										<span class="time">16 min</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon blue"><i class="icon-user"></i></span>
 										<span class="message">New user registration</span>
 										<span class="time">36 min</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon yellow"><i class="icon-shopping-cart"></i></span>
 										<span class="message">2 items sold</span>
 										<span class="time">1 hour</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li class="warning">
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon red"><i class="icon-user"></i></span>
 										<span class="message">User deleted account</span>
 										<span class="time">2 hour</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li class="warning">
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon red"><i class="icon-shopping-cart"></i></span>
 										<span class="message">New comment</span>
 										<span class="time">6 hour</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
 										<span class="time">yesterday</span> 
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="icon blue"><i class="icon-user"></i></span>
 										<span class="message">New user registration</span>
 										<span class="time">yesterday</span> 
-                                    </a>
-                                </li>
-                                <li class="dropdown-menu-sub-footer">
-                            		<a>View all notifications</a>
+									</a>
+								</li>
+								<li class="dropdown-menu-sub-footer">
+									<a>View all notifications</a>
 								</li>	
 							</ul>
 						</li>
@@ -158,56 +158,56 @@ if (isset($sort_this)) {
 							</a>
 							<ul class="dropdown-menu tasks">
 								<li class="dropdown-menu-title">
- 									<span>You have 17 tasks in progress</span>
+									<span>You have 17 tasks in progress</span>
 									<a href="<?php echo base_url();?>assets/admin/#refresh"><i class="icon-repeat"></i></a>
 								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="header">
 											<span class="title">iOS Development</span>
 											<span class="percent"></span>
 										</span>
-                                        <div class="taskProgress progressSlim red">80</div> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+										<div class="taskProgress progressSlim red">80</div> 
+									</a>
+								</li>
+								<li>
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="header">
 											<span class="title">Android Development</span>
 											<span class="percent"></span>
 										</span>
-                                        <div class="taskProgress progressSlim green">47</div> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
-										<span class="header">
-											<span class="title">ARM Development</span>
-											<span class="percent"></span>
-										</span>
-                                        <div class="taskProgress progressSlim yellow">32</div> 
-                                    </a>
-                                </li>
+										<div class="taskProgress progressSlim green">47</div> 
+									</a>
+								</li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="header">
 											<span class="title">ARM Development</span>
 											<span class="percent"></span>
 										</span>
-                                        <div class="taskProgress progressSlim greenLight">63</div> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
-										<span class="header">
-											<span class="title">ARM Development</span>
-											<span class="percent"></span>
-										</span>
-                                        <div class="taskProgress progressSlim orange">80</div> 
-                                    </a>
-                                </li>
+										<div class="taskProgress progressSlim yellow">32</div> 
+									</a>
+								</li>
 								<li>
-                            		<a class="dropdown-menu-sub-footer">View all tasks</a>
+									<a href="<?php echo base_url();?>assets/admin/#">
+										<span class="header">
+											<span class="title">ARM Development</span>
+											<span class="percent"></span>
+										</span>
+										<div class="taskProgress progressSlim greenLight">63</div> 
+									</a>
+								</li>
+								<li>
+									<a href="<?php echo base_url();?>assets/admin/#">
+										<span class="header">
+											<span class="title">ARM Development</span>
+											<span class="percent"></span>
+										</span>
+										<div class="taskProgress progressSlim orange">80</div> 
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-menu-sub-footer">View all tasks</a>
 								</li>	
 							</ul>
 						</li>
@@ -221,91 +221,91 @@ if (isset($sort_this)) {
 							</a>
 							<ul class="dropdown-menu messages">
 								<li class="dropdown-menu-title">
- 									<span>You have 9 messages</span>
+									<span>You have 9 messages</span>
 									<a href="<?php echo base_url();?>assets/admin/#refresh"><i class="icon-repeat"></i></a>
 								</li>	
-                            	<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	6 min
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	56 min
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	3 hours
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
 								<li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
+									<a href="<?php echo base_url();?>assets/admin/#">
 										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Dennis Ji
-										     </span>
+												Dennis Ji
+											</span>
 											<span class="time">
-										    	yesterday
-										    </span>
+												6 min
+											</span>
 										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url();?>assets/admin/#">
-										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	Jul 25, 2012
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>  
+									</a>
+								</li>
 								<li>
-                            		<a class="dropdown-menu-sub-footer">View all messages</a>
+									<a href="<?php echo base_url();?>assets/admin/#">
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												56 min
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>  
+									</a>
+								</li>
+								<li>
+									<a href="<?php echo base_url();?>assets/admin/#">
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												3 hours
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>  
+									</a>
+								</li>
+								<li>
+									<a href="<?php echo base_url();?>assets/admin/#">
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												yesterday
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>  
+									</a>
+								</li>
+								<li>
+									<a href="<?php echo base_url();?>assets/admin/#">
+										<span class="avatar"><img src="img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												Jul 25, 2012
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>  
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-menu-sub-footer">View all messages</a>
 								</li>	
 							</ul>
 						</li>
@@ -318,7 +318,7 @@ if (isset($sort_this)) {
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
- 									<span>Account Settings</span>
+									<span>Account Settings</span>
 								</li>
 								<li><a href="<?php echo base_url();?>assets/admin/#"><i class="halflings-icon user"></i> Profile</a></li>
 								<li><a href="<?php echo base_url();?>assets/admin/login.html"><i class="halflings-icon off"></i> Logout</a></li>
@@ -334,26 +334,28 @@ if (isset($sort_this)) {
 	</div>
 	<!-- start: Header -->
 	
-		<div class="container-fluid-full">
+	<div class="container-fluid-full">
 		<div class="row-fluid">
-				
+			
 			<!-- start: Main Menu -->
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li><a href="<?=base_url()?>dashboard/home"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
-					<?php 
-					  echo Modules::run('store_order_status/_draw_left_nav_links');
-					 ?>
-					<li><a href="<?=base_url()?>store_order_status/manage"><i class="halflings-icon white list-alt"></i><span class="hidden-tablet"> Order Status Options</span></a></li>
-					<li><a href="<?=base_url()?>sliders/manage"><i class="halflings-icon white icon-picture"></i><span class="hidden-tablet"> Manage Slider's</span></a></li>
-					<li><a href="<?php echo base_url();?>enquiries/inbox"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
-					<li><a href="<?= base_url()?>store_items/manage"><i class="icon-tag"></i><span class="hidden-tablet"> Manage Item</span></a></li>
-					<li><a href="<?= base_url()?>store_categories/manage"><i class="icon-align-justify"></i><span class="hidden-tablet"> Manage Categories</span></a></li>
-					<li><a href="<?= base_url()?>homepage_blocks/manage"><i class=" icon-star"></i><span class="hidden-tablet"> Homepage Offers</span></a></li>
-					<li><a href="<?= base_url()?>webpages/manage"><i class=" icon-file"></i><span class="hidden-tablet"> CMS</span></a></li>
-					<li><a href="<?= base_url()?>blog/manage"><i class=" icon-file-alt"></i><span class="hidden-tablet"> Manage Blog</span></a></li>
-					<li><a href="<?= base_url()?>store_accounts/manage"><i class="icon-briefcase"></i><span class="hidden-tablet"> Accounts</span></a></li>
+						<?php 
+						echo Modules::run('store_order_status/_draw_left_nav_links');
+						?>
+						<li><a href="<?=base_url()?>store_order_status/manage"><i class="halflings-icon white list-alt"></i><span class="hidden-tablet"> Order Status Options</span></a></li>
+						<li><a href="<?=base_url()?>sliders/manage"><i class="halflings-icon white icon-picture"></i><span class="hidden-tablet"> Manage Slider's</span></a></li>
+						<li><a href="<?php echo base_url();?>enquiries/inbox"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span><span class="badge red">
+						4 </span></a></li>
+						<li><a href="<?= base_url()?>store_items/manage"><i class="icon-tag"></i><span class="hidden-tablet"> Manage Item</span></a></li>
+						<li><a href="<?= base_url()?>store_categories/manage"><i class="icon-align-justify"></i><span class="hidden-tablet"> Manage Categories</span></a></li>
+						<li><a href="<?= base_url()?>homepage_blocks/manage"><i class=" icon-star"></i><span class="hidden-tablet"> Homepage Offers</span></a></li>
+						<li><a href="<?= base_url()?>webpages/manage"><i class=" icon-file"></i><span class="hidden-tablet"> CMS</span></a></li>
+						<li><a href="<?= base_url()?>btm_nav/manage"><i class=" icon-file"></i><span class="hidden-tablet"> Bottom Navigation Link</span></a></li>
+						<li><a href="<?= base_url()?>blog/manage"><i class=" icon-file-alt"></i><span class="hidden-tablet"> Manage Blog</span></a></li>
+						<li><a href="<?= base_url()?>store_accounts/manage"><i class="icon-briefcase"></i><span class="hidden-tablet"> Accounts</span></a></li>
 						<li><a href="<?php echo base_url();?>assets/admin/tasks.html"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
 						<li><a href="<?php echo base_url();?>assets/admin/ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> UI Features</span></a></li>
 						<li><a href="<?php echo base_url();?>assets/admin/widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Widgets</span></a></li>
@@ -388,21 +390,21 @@ if (isset($sort_this)) {
 			
 			<!-- start: Content -->
 			<div id="content" class="span10">
-			
-		<?php
-			if (isset($view_file)) {
-				$this->load->view($view_module.'/'.$view_file);
-			}
-			?>
-			
-       
+				
+				<?php
+				if (isset($view_file)) {
+					$this->load->view($view_module.'/'.$view_file);
+				}
+				?>
+				
+				
 
-	</div><!--/.fluid-container-->
-	
+			</div><!--/.fluid-container-->
+			
 			<!-- end: Content -->
 		</div><!--/#content.span10-->
-		</div><!--/fluid-row-->
-		
+	</div><!--/fluid-row-->
+	
 	<div class="modal hide fade" id="myModal">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">×</button>
@@ -439,60 +441,60 @@ if (isset($sort_this)) {
 	
 	<!-- start: JavaScript-->
 
-		<script src="<?php echo base_url();?>assets/admin/js/jquery-1.9.1.min.js"></script>
-	    <script src="<?php echo base_url();?>assets/admin/js/jquery-migrate-1.0.0.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery-1.9.1.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery-migrate-1.0.0.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery-ui-1.10.0.custom.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.ui.touch-punch.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.ui.touch-punch.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/modernizr.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/modernizr.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/bootstrap.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.cookie.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.cookie.js"></script>
 	
-		<script src='<?php echo base_url();?>assets/admin/js/fullcalendar.min.js'></script>
+	<script src='<?php echo base_url();?>assets/admin/js/fullcalendar.min.js'></script>
 	
-		<script src='<?php echo base_url();?>assets/admin/js/jquery.dataTables.min.js'></script>
+	<script src='<?php echo base_url();?>assets/admin/js/jquery.dataTables.min.js'></script>
 
-		<script src="<?php echo base_url();?>assets/admin/js/excanvas.js"></script>
-	    <script src="<?php echo base_url();?>assets/admin/js/jquery.flot.js"></script>
-	    <script src="<?php echo base_url();?>assets/admin/js/jquery.flot.pie.js"></script>
-	    <script src="<?php echo base_url();?>assets/admin/js/jquery.flot.stack.js"></script>
-	   <script src="<?php echo base_url();?>assets/admin/js/jquery.flot.resize.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/excanvas.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.flot.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.flot.pie.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.flot.stack.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.flot.resize.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.chosen.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.chosen.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.uniform.min.js"></script>
-		
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.cleditor.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.uniform.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.noty.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.cleditor.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.elfinder.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.noty.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.raty.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.elfinder.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.iphone.toggle.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.raty.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.uploadify-3.1.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.iphone.toggle.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.gritter.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.uploadify-3.1.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.imagesloaded.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.gritter.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.masonry.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.imagesloaded.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.knob.modified.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.masonry.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/jquery.sparkline.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.knob.modified.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/counter.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/jquery.sparkline.min.js"></script>
 	
-		<script src="<?php echo base_url();?>assets/admin/js/retina.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/counter.js"></script>
+	
+	<script src="<?php echo base_url();?>assets/admin/js/retina.js"></script>
 
-		<script src="<?php echo base_url();?>assets/admin/js/custom.js"></script>
+	<script src="<?php echo base_url();?>assets/admin/js/custom.js"></script>
 	<!-- end: JavaScript-->
 	
 </body>

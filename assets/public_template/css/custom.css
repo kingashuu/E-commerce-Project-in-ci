@@ -13,17 +13,103 @@ Note: This is the file where you can add your custom styles to change the look o
 
 /* ----------------------------------------------------
 	You can put your custom css code here: 
--------------------------------------------------------*/
+	-------------------------------------------------------*/
 
-/* Credit to bootsnipp.com for the css for the color graph */
-/* customer top panel */
+	/* Credit to bootsnipp.com for the css for the color graph */
+	/* customer top panel */
 
-.tab-pane img{
-	/*height: 576px;*/
-	max-height: 610px
+
+	/* top header slide style */
+	.top-of-page{
+		display: flex;
+		justify-content: space-between; 
+		font-family: 'Raleway', sans-serif;
+		padding: 2px 2em;
+		font-size: 18px;
+		background: #01a6a9;
+		color: #fff;
+		text-align: center;
+	}
+	.top-of-page p{
+		color: #fff;
+		/*font-weight: 100;*/
+		font-size: 10px;
+        margin: 0.4em 0;
+
+	}
+	.top-slied-l{
+		width: 20%;
+		
+	}
+	.top-slied-m {
+		width: 60%;
+
+	}
+	.top-slied-r {
+		width: 20%;
+		
+		/*position: fixed;*/
+
+	}
+.top-slied-r {
+  width: 20%;
+  /* float: right; */
+ 
+}
+.animated-text{
+	position: absolute;
+	/*top: 50%;*/
+	/*transform: translate(-50%, -50%);*/
+	/*background: red;*/
+	text-align: center;
+	padding: 10px 2em;
+	height: 60px;
+	overflow: hidden; 
+}
+.line{
+	text-transform: lowercase;
+	text-align: center;
+	font-size:18px; 
+	line-height: 60px;
+
+}
+.line:first-child{
+	animation: anim 30s infinite;
+
+}
+@keyframes anim {
+	0%{
+		margin-top: 0;
+	}
+	16%{
+		margin-top: -60px;
+	}
+	33%{
+		margin-top: -120px;
+	}
+	50%{
+		margin-top: -180px;
+	}
+	66%{
+		margin-top: -120px;
+	}
+	82%{
+		margin-top: -60px;
+	}
+	100%{
+		margin-top: 0;
+	}
 }
 
-.pro-view img{
-	width: 104px;
-	height: 128px;
-}
+
+  /* end of top header slide style */
+
+  .tab-pane img{
+  	/*height: 576px;*/
+  	max-height: 610px
+  }
+
+  .pro-view img{
+  	width: 104px;
+  	height: 128px;
+  }
