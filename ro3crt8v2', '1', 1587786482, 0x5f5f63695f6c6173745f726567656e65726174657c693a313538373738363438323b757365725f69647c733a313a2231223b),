@@ -1,0 +1,32 @@
+[33mcommit d3106f9606c111cf2b540f864fa1875646b77c68[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Mon Apr 27 20:18:13 2020 +0300
+
+    update header and footer navigation liks
+
+[33mcommit bea3bdd2b7d7cf8dc8cf2bb7a0005914828c358f[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Wed Apr 15 04:22:17 2020 +0300
+
+    add sliders and slides module, add item galleries module for item and update login and register page
+
+[33mcommit 492b1c85980d91f3aab370357047f0abf74e87ac[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Wed Apr 15 03:57:42 2020 +0300
+
+    update venobox.css
+
+[33mcommit 202205f50392d336d55b86a792193e9ebb4ee65a[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Wed Apr 15 03:17:15 2020 +0300
+
+    add sliders module
+    add slides module
+    add item galleries module for item
+    update login and register page
+
+[33mcommit 1723be92514cb89c703943fbc82142cb2ffcb27f[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Sun Mar 29 00:23:51 2020 +0300
+
+    first commit of this project
