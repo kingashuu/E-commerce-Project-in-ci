@@ -74,7 +74,7 @@
                                 <div class="header-top ">
                                     <ul>
                                         <li class="lh-50x">
-                                            <a href="#" class="prl-20 text-white" style="">USD</a>
+                                            <a href="#" class="prl-20 text-white">USD</a>
                                             <div class="header-top-down header-top-hover pl-15 lh-35">
                                                 <ul>
                                                     <li><a href="#">USD</a></li>
@@ -319,7 +319,7 @@
         <footer id="footer" class="footer-area">
             <div class="footer-top-area gray-bg">
                 <?php echo Modules::run('btm_nav/_draw_footer_content'); ?>
-                
+
             </div>
             <div class="footer-bottom black-bg ptb-15">
                 <div class="container">
