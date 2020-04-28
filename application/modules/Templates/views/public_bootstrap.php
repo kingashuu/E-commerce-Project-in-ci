@@ -101,14 +101,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="animated-text">
-                    <div class="line"><i class="zmdi zmdi-smartphone-iphone"></i> +251928180588</div>
-                    <div class="line"><i class="zmdi zmdi-phone"></i> 1230 456 547</div>
-                    <div class="line"><i class="zmdi zmdi-comment-alt-text"></i> abeke76@gimal.com</div>
-                    <div class="line"><i class="zmdi zmdi-twitter"></i> twitter</div>
-                </div> -->
-
-
                 </div>
 
 
@@ -225,63 +217,63 @@
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
                                     <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/1.png" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/1.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/2.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/2.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/3.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/3.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/4.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/4.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/5.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/5.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/6.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/6.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/1.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/7.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/2.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/8.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="single-brand text-center">
-                                    <a href="<?php echo base_url(); ?>assets/public_template/#">
-                                        <img src="<?php echo base_url(); ?>assets/public_template/images/brand/3.png" alt="">
+                                    <a href="<?php echo base_url(); ?>assets/#">
+                                        <img src="<?php echo base_url(); ?>assets/images/brand/1.png" alt="">
                                     </a>
                                 </div>
                             </div>

@@ -19,9 +19,9 @@ $this->load->module('timedate');
 			$page_description = $row->page_description;
 			$page_content = $row->page_content;
 
-			$picture = $row->picture;
-			$thumbnail_name = str_replace('.', '_thumb.', $picture);
-			$thumbnail_path = base_url() . 'blog_pics/' . $thumbnail_name;
+			$picture = base_url().'blog_pics/'.$row->picture;
+			// $thumbnail_name = str_replace('.', '_thumb.', $picture);
+			// $thumbnail_path = base_url() . 'blog_pics/' . $thumbnail_name;
 			$date_published = $this->timedate->get_nice_date($row->date_published, 'mini');
 			$author = $row->author;
 		}
@@ -37,9 +37,9 @@ $this->load->module('timedate');
 			<div class="row">
 				<div class="col-md-9 col-md-push-3 col-xs-12">
 					<div class="single-blog fix">
-						<div class="post-thumbnail mb-50 b-img">
+						<div class="post-thumbnail mb-50 blog-image">
 							<a href="#">
-								<img src="<?= $thumbnail_path?>" alt="<?= $page_title?>" class="img-responsive" width: 100%>
+								<img src="<?= $picture?>" alt="<?= $page_title?>" class="img-responsive">
 			 				</a>
 						</div>
 						<div class="postinfo-wrapper pl-100">

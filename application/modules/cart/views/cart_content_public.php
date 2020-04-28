@@ -62,11 +62,9 @@
                                                     </a>
                                                     <p class="w-color m-0">
                                                         <label> Color :</label>
-                                                        black
                                                     </p>
                                                     <p class="w-size m-0">
                                                         <label> size :</label>
-                                                        sl
                                                     </p>
                                                 </td>
                                                 <td class="product-prices"><span class="amount"><?= $row->price." ".$currency_symbol?></span>
@@ -226,6 +224,7 @@
         if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
     }
 });
+
 
 
 </script>

@@ -1,3 +1,7 @@
+  <section id="page-content" class="page-wrapper">
+  	<!-- Start Blog Page Area -->
+  	<div class="blog-page-area section-padding">
+  		<div class="container">
   			<div class="row">
   					<?php
   					$this->load->module('timedate');
@@ -10,7 +14,7 @@
   						$blog_url= base_url().'blog/article/'.$row->page_url;
 
   						?>
-  				<div class="blog-list clearfixx">
+  				<div class="blog-list mb-30x clearfixx">
   						<div class="col-md-4 col-sm-6 mb-30">
   							<div class="single-blog">
   								<div class="blog-image">
@@ -66,3 +70,6 @@
   						<?php 
   					} ?>
   			</div>
+  		</div>
+  	</div>
+  </section>

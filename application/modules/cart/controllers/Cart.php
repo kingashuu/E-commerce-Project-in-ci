@@ -39,6 +39,21 @@ class Cart extends MX_Controller
 
 	function _draw_cart_hover_drop_d()
 	{
+		/*//NOTE:user type can be 'public'or 'admin';
+		$this->load->module('site_settings');
+		$this->load->module('shipping');
+
+		$data['currency_symbol'] =$this->site_settings->_get_currency_symbol();
+
+		if ($user_type=='public') {
+			$view_file ='cart_content_public';
+		}else{
+			$view_file ='cart_content_admin';
+		}
+		$data['shipping']= $this->shipping->_get_shipping();
+		$data['query']=$query;
+		$data['num_rows']= $data['query']->num_rows();
+		$this->load->view($view_file, $data);*/
 		$this->load->view('cart_hover');
 
 	}
@@ -234,9 +249,9 @@ class Cart extends MX_Controller
 		$this->load->module('site_security');
 		$shopper_id=$this->site_security->_get_user_id();
 
-		if (!is_numeric($shopper_id)) {
-			$shopper_id=0;
-		}
+		// if (!is_numeric($shopper_id)) {
+		// 	$shopper_id=0;
+		// }
 		$table='store_basket';
 		$data['query']=$this->_fetch_cart_contents($session_id, $shopper_id, $table);
 		//count the number of item in the cart

@@ -17,6 +17,18 @@
 		$this->load->module('templates');
 		$this->templates->public_bootstrap($data);
  	}
+ 	function blog_index()
+ 	{
+ 		$this->load->helper('text');
+ 		$mysql_query = "select * from blog order by date_published desc limit 0,9";
+ 		$data['query'] = $this->_custom_query($mysql_query);
+
+ 		// $data['view_module'] = "blog";
+		$data['view_file'] = "blog";
+		$this->load->module('templates');
+		$this->templates->public_bootstrap($data);
+
+ 	}
 
  	function _draw_feed_hp()
  	{
