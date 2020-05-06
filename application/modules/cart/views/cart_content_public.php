@@ -4,7 +4,7 @@
 
         <!-- End Of Breadcrumbs Area -->
         <!-- Start page content -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
         <script src="<?php echo base_url();?>assets/public_template/js/vendor/jquery-3.1.1.min.js"></script>
         <section id="page-content" class="page-wrapper">
             <!-- Start Wishlist Area -->

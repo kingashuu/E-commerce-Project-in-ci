@@ -67,6 +67,7 @@ function _draw_sortable_list()
 {
 	//This is draw the offer blocs that is in home page;
 	$data['query']=$this->get('priority');
+	$data['use_angularjs']=TRUE;
 	$num_rows=$data['query']->num_rows();
 	if ($num_rows>0) {
 		$this->load->view('homepage_blocks', $data);

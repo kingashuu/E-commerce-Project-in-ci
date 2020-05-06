@@ -149,3 +149,6 @@ try {
 } catch (error) {
 	console.log(error);
 }
+
+/*------------angulrjs for swetalert style-----------*/
+/*------------end of angulrjs for swetalert style-----------*/

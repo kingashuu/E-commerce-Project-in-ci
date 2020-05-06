@@ -65,6 +65,7 @@ class Store_items extends MX_Controller
 		//build the breadcrumbs array
 		//templates, current
 		//_page_title,breadcrumbs_array
+		$data['use_angularjs']=TRUE;
 		$breadcrumbs_data['templates']='public_bootstrap';
 		$breadcrumbs_data['current_page_title']=$data['item_title'];
 		$breadcrumbs_data['breadcrumbs_array']= $this->_generate_breadcrumbs_array($update_id);
@@ -135,9 +136,6 @@ class Store_items extends MX_Controller
 				$sub_cat_id=$value;
 				$num_items_in_sub_cat=$this->load->store_cat_assign->count_where('cat_id', $sub_cat_id);
 				$num_items_count[$sub_cat_id]=$num_items_in_sub_cat;
-			}
-			foreach ($num_items_count as $key => $value) {
-				echo "key of $key has value of $value<br>";
 			}
 			$sub_cat_id=$this->get_best_array_key($num_items_count);
 			return $sub_cat_id;

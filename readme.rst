@@ -1,5 +1,5 @@
 ###################
-This is E-commerce web app project using Codeigniter framework and HMVC 
+This is E-commerce web app project using Codeigniter framework and HMVC Extension 
 ###################
 
 **********************

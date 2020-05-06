@@ -49,7 +49,7 @@ class Store_categories extends MX_Controller
 		$data['pagination']=$this->custom_pagination->_generate_pagination($pagination_data);
 		$pagination_data['offset']=$this->get_offset();
 		$data['showing_statement']=$this->custom_pagination->get_showing_statement($pagination_data);
-		
+		$data['use_angularjs']=TRUE;
 		$data['currency_symbol']= $this->load->site_settings->_get_currency_symbol();
 		$data['item_segments'] = $this->site_settings->_get_item_segments();
 		$data['query']= $this->_custom_query($mysql_query);

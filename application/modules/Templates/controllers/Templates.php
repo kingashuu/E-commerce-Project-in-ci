@@ -79,7 +79,7 @@ class Templates extends MX_Controller
 		}
 		$this->load->module('site_security');
 		$data['customer_id'] = $this->site_security->_get_user_id();
-
+        $data['use_angularjs']=TRUE;
 		$this->load->view('public_bootstrap', $data);
 	}
 	function public_jqm($data)

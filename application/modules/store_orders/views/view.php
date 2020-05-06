@@ -1,9 +1,18 @@
 <h1><?= $headline ?></h1>
+
+
 <?= validation_errors("<p style='color: #ff0000'>","</p>");?>
 <?php
 if (isset($flash)) {
 	echo $flash;
 }
+?>
+<p style="text-align: right;">
+	<a href="<?= base_url()?>invoices/admin_order_pdf_view/<?= $update_id?>">
+		<button class="btn btn-success">View Invoice</button>
+	</a>
+</p>
+<?php
 echo Modules::run('paypal/_display_summary_info', $paypal_id);
 if (is_numeric($update_id)) {
 	?>
@@ -98,3 +107,4 @@ if (is_numeric($update_id)) {
 $user_type='admin';
 echo Modules::run('cart/_draw_cart_contents', $query_cc, $user_type);
  
+?>

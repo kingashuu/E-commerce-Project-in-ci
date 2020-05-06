@@ -7,15 +7,35 @@
  		parent::__construct();
  	}
  	
+ 	function archives()
+ 	{
+
+
+ 		// $mysql_query =" SELECT 
+ 		// YEAR(created_at)YEAR,
+ 		// MONTHname(created_at)MONTH,
+ 		// count(*)published
+ 		// FROM blog
+ 		// GROUP BY YEAR(created_at),
+ 		// MONTH(created_at)
+ 		// ORDER BY min(created_at) DESC";
+
+        $mysql_query = "select * from blog order by date_published desc";
+        // $mysql_query = "select * from blog
+        //  ORDER BY Year(date_published) * 1, Month(date_published) * 1;";
+ 		$data['query_arc'] = $this->_custom_query($mysql_query);
+ 		// $data['date_published']= $this->$data['query_arc'];
+ 		$this->load->view('archives', $data);
+  	}
  	function article()
  	{
- 	   $first_bit = trim($this->uri->segment(3));
-	   $data['query'] = $this->get_where_custom('page_url', $first_bit);
+ 		$first_bit = trim($this->uri->segment(3));
+ 		$data['query'] = $this->get_where_custom('page_url', $first_bit);
 
-		$data['view_module'] = "blog";
-		$data['view_file'] = "article";
-		$this->load->module('templates');
-		$this->templates->public_bootstrap($data);
+ 		$data['view_module'] = "blog";
+ 		$data['view_file'] = "article";
+ 		$this->load->module('templates');
+ 		$this->templates->public_bootstrap($data);
  	}
  	function blog_index()
  	{
@@ -24,9 +44,9 @@
  		$data['query'] = $this->_custom_query($mysql_query);
 
  		// $data['view_module'] = "blog";
-		$data['view_file'] = "blog";
-		$this->load->module('templates');
-		$this->templates->public_bootstrap($data);
+ 		$data['view_file'] = "blog";
+ 		$this->load->module('templates');
+ 		$this->templates->public_bootstrap($data);
 
  	}
 

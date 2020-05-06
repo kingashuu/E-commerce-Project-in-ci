@@ -21,6 +21,7 @@ function __construct() {
     	$query=$this->_custom_query($mysql_query);
     	$num_rows =$query->num_rows();
     	if ($num_rows>0) {
+    		$data['use_angularjs']=TRUE;
     		$data['query'] = $query;
     		$data['theme']= $theme;
     		$data['item_segments'] = $item_segments;

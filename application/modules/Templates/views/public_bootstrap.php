@@ -31,7 +31,6 @@
 
 
 
-
     <!-- Modernizr JS -->
     <script src="<?php echo base_url(); ?>assets/public_template/js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -42,6 +41,9 @@
     <?php
 
     } ?>
+
+    <script src="<?php echo base_url() ?>assets/public_template/js/sweetalert.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/public_template/js/vendor/jquery-3.1.1.min.js"></script>
 
 </head>
 
@@ -332,7 +334,7 @@
         </footer>
         <!-- End footer area -->
         <!--Quickview Product Start -->
-        <div id="quickview-wrapper">
+        <div id="quickview-wrapperx">
             <!-- Modal -->
             <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
@@ -450,8 +452,6 @@
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script> -->
     <!-- Bootstrap framework js -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
     <script src="<?php echo base_url(); ?>assets/public_template/js/vendor/jquery-3.1.1.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/public_template/js/vendor/vendor.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/public_template/js/bootstrap.min.js"></script>
@@ -462,6 +462,8 @@
     <!-- Main js file that contents all jQuery plugins activation. -->
     <script src="<?php echo base_url(); ?>assets/public_template/js/main.js"></script>
     <script src="<?php echo base_url(); ?>assets/public_template/js/custom.js"></script>
+
+    <!--===============================================================================================-->
 
 </body>
 

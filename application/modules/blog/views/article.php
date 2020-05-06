@@ -286,14 +286,14 @@ $this->load->module('timedate');
 							</div>
 						</div>
 						<div class="blog-sidebar fix">
-							<h4 class="aside-title text-uppercase pb-20 mb-30">Blog Archives</h4>
+						<?php
+                        echo Modules::run('blog/archives');
+                        ?>
+							<!-- <h4 class="aside-title text-uppercase pb-20 mb-30">Blog Archives</h4>
 							<ul>
 								<li><a href="#">January 2016</a></li>
-								<li><a href="#">December 2015</a></li>
-								<li><a href="#">November 2015</a></li>
-								<li><a href="#">September 2015</a></li>
-								<li><a href="#">August 2015</a></li>
-							</ul>
+
+							</ul> -->
 						</div>
 					</div>
 				</div>

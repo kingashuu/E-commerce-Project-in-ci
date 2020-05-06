@@ -44,12 +44,6 @@ class Cart extends MX_Controller
 		$this->load->module('shipping');
 
 		$data['currency_symbol'] =$this->site_settings->_get_currency_symbol();
-
-		if ($user_type=='public') {
-			$view_file ='cart_content_public';
-		}else{
-			$view_file ='cart_content_admin';
-		}
 		$data['shipping']= $this->shipping->_get_shipping();
 		$data['query']=$query;
 		$data['num_rows']= $data['query']->num_rows();
