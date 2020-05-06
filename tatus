@@ -1,0 +1,75 @@
+[33mcommit c3ef04e5ca67d7f2eab06442f03b35a7a6f3d358[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Thu May 7 02:28:20 2020 +0300
+
+    add swetalert add pdf module and other
+
+[33mcommit 1dbd82ace5be2b96009c6a6b8239f3543c0ad239[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Tue Apr 28 03:02:34 2020 +0300
+
+    add blog view and fix same css filee
+
+[33mcommit b1dd35b278c3db904e1891504cf8d104da62fed9[m
+Merge: 660d468 c3e0966
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Mon Apr 27 20:57:47 2020 +0300
+
+    Merge branch 'master' of https://github.com/kingashuu/E-commerce-Project-in-ci
+
+[33mcommit 660d4681198368554b7f4a90f867be380d1a5d69[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Mon Apr 27 20:55:33 2020 +0300
+
+    fix
+
+[33mcommit dfa84dcf6c4a40bc8cf65387245f686a66343821[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Mon Apr 27 20:45:42 2020 +0300
+
+    update cart and footer nav links
+
+[33mcommit 20e68d65b41f29479d1afd3e89161a7ec6eb3562[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Mon Apr 27 20:32:59 2020 +0300
+
+    update cart counter header ande footer navigation liks
+
+[33mcommit d3106f9606c111cf2b540f864fa1875646b77c68[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Mon Apr 27 20:18:13 2020 +0300
+
+    update header and footer navigation liks
+
+[33mcommit bea3bdd2b7d7cf8dc8cf2bb7a0005914828c358f[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Wed Apr 15 04:22:17 2020 +0300
+
+    add sliders and slides module, add item galleries module for item and update login and register page
+
+[33mcommit 492b1c85980d91f3aab370357047f0abf74e87ac[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Wed Apr 15 03:57:42 2020 +0300
+
+    update venobox.css
+
+[33mcommit 202205f50392d336d55b86a792193e9ebb4ee65a[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Wed Apr 15 03:17:15 2020 +0300
+
+    add sliders module
+    add slides module
+    add item galleries module for item
+    update login and register page
+
+[33mcommit c3e09669ae243787a62fb01653ebbd90fc05f570[m
+Author: Ashenafi Bekele <48837802+kingashuu@users.noreply.github.com>
+Date:   Tue Apr 14 22:54:36 2020 +0300
+
+    Update readme.rst
+
+[33mcommit 1723be92514cb89c703943fbc82142cb2ffcb27f[m
+Author: Kingashuu <abekele76@gmail.com>
+Date:   Sun Mar 29 00:23:51 2020 +0300
+
+    first commit of this project
