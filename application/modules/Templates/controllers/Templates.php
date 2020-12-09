@@ -21,7 +21,8 @@ class Templates extends MX_Controller
 	}
 	function _draw_page_top_mid()
 	{
-		$this->load->view('page_top_mid');
+		$data['searched_keyword'] = $this->input->post('searched_keyword', TRUE);
+		$this->load->view('page_top_mid', $data);
 	}
 	function _draw_page_top_rhs($shopper_id)
 	{
@@ -50,6 +51,12 @@ class Templates extends MX_Controller
 			$view_file='page_top_rhs_out';
 		}
 		$this->load->view($view_file, $data);
+	}
+	function _draw_cart_hover_drop_d(){
+		$this->load->module('cart');
+		$this->load->module('site_settings');
+		$this->load->cart->_cart_hover_drop_d();
+
 	}
 
 	function _draw_breadcrumbs($data)

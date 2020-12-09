@@ -26,7 +26,7 @@
 
                 <div class="mini-cart-inner header-top-down p-20">
                     <?php
-                    echo Modules::run('cart/_draw_cart_hover_drop_d');
+                    echo Modules::run('templates/_draw_cart_hover_drop_d');
                     ?>
 
 

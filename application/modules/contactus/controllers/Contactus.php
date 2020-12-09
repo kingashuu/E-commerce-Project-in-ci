@@ -11,14 +11,14 @@ class Contactus extends MX_Controller
     {
         $submit = $this->input->post('submit', TRUE);
 
-        if (($submit == "submit") AND ($refer_url==$target_refer_url)){
+        if ($submit == "submit"){
 
             //process the form
             $this->load->library('form_validation');
             $this->form_validation->set_rules('yourname', 'Your Name', 'required|max_length[60]');
             $this->form_validation->set_rules('email', 'Emale', 'required|valid_email');
             $this->form_validation->set_rules('telnum', 'Telphon number','required|max_length[20]');
-            $this->form_validation->set_rules('message', 'Message', 'required');
+            $this->form_validation->set_rules('message', 'message', 'required');
 
             if ($this->form_validation->run() == TRUE) {
                 //get the variables
@@ -29,7 +29,7 @@ class Contactus extends MX_Controller
                     //insert the message
                 
                 $data['code']=$this->site_security->generate_random_string(6);
-                $data['subject'] = 'contact form';
+                $data['subject'] = 'Contact Form';
                 $data['message'] = $this->build_msg($posted_data);
                 $data['sent_to'] = 0;                
                 $data['date_created'] = time();
@@ -50,7 +50,7 @@ class Contactus extends MX_Controller
     {
         $yourname = ucfirst($posted_data['yourname']);
         $msg =$yourname.' submited the following information:<br><br>';
-        $msg.='Name: '.$posted_data['yourname']."<br>";
+        $msg.='Name: '.$yourname."<br>";
         $msg.='Email: '.$posted_data['email']."<br>";
         $msg.='Telephon Number: '.$posted_data['telnum']."<br>";
         $msg.='Message: '.$posted_data['message']."<br>";

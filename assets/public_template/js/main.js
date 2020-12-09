@@ -119,7 +119,16 @@ NOTE: If you have any note put here.
     focusOnSelect: true
   });
 
-
+ $('.offers-slides').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    focusOnSelect: true
+  });
 
 
     /*************************
@@ -181,7 +190,16 @@ NOTE: If you have any note put here.
   });
  
  
-
+// /*offers slide*/
+// $(".offers-slides").owlCarousel({
+//     autoPlay: true, 
+//     slideSpeed:2000,
+//     pagination:false,
+//     navigation:false,   
+//     items : 4,
+  
+//   });
+/* End of offers slide*/
  
 /*----------------------------
  price-slider active

@@ -1,4 +1,7 @@
+
  <ul class="cart-list">
+
+ 
  	<li class="p-10 mb-15">
  		<a href="<?php echo base_url();?>assets/public_template/#" class="product-image">
  			<img src="<?php echo base_url();?>assets/public_template/images/shop/cart/1.jpg" alt="">
@@ -12,6 +15,7 @@
  			<span class="selected-size">$80.00</span>
  		</div>
  	</li>
+ 
  	<li class="p-10 mb-15">
  		<a href="<?php echo base_url();?>assets/public_template/#" class="product-image">
  			<img src="<?php echo base_url();?>assets/public_template/images/shop/cart/2.jpg" alt="">

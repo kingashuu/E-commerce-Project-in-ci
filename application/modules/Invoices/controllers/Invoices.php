@@ -47,8 +47,8 @@ class Invoices extends MX_Controller
         $data['update_id'] = $update_id;
         // Load all views as normal
         $this->load->view('order_cspdf', $data);
-        //Get output html
-        $html = $this->output->get_output(); 
+        // //Get output html
+        // $html = $this->output->get_output(); 
         // // Load library
         // $this->load->library('dompdf_gen');
         

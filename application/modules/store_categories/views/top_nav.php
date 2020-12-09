@@ -5,7 +5,7 @@
 
 			<nav id="primary-menu">
 				<ul class="main-menu text-center">
-					<li><a href="<?php echo base_url();?>assets/public_template/index.html">Home</a></li>
+					<li><a href="<?php echo base_url();?>blog/blog_index">News</a></li>
 					<?php
 					$this->load->module('store_categories');
 					foreach ($parent_categories as $key => $value) {

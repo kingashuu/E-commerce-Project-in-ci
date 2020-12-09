@@ -14,7 +14,6 @@
 <!-- End Of Breadcrumbs Area -->
 <!-- Start page content -->
 <section id="page-content" class="page-wrapper">
-	<?php echo validation_errors("<p style='color: red;'>", "</p>"); ?>
 	<!-- Map Area Start -->
 	<div class="map-area">
 		<div id="googleMap" style="width:100%;height:600px;">
@@ -34,15 +33,18 @@
 							<div class="title text-uppercase mb-15">
 								<h4><strong>get in touch</strong></h4>
 							</div>
+							<?php
+							echo validation_errors("<p style='color:red;'>", "</p>");
+							?>
 							<form action="<?= $form_location?>" method="post">
 								<div class="form-group hiddenname" style="display: none;">
 									<label for="name">
 									Name</label>
-									<input type="text" name="firstname" class="form-control" id="name" placeholder="first" required="required" />
+									<input type="text" name="firstname" class="form-control" id="name" />
 								</div>
-								<label for="name">Name</label>
-								<input type="text" name="yourname" value="<?= $yourname?>" id="name" placeholder="Enter name" required="required" />
-								<label for="subject">Telephon Number</label>
+								<label for="name">Your Name</label>
+								<input type="text" name="yourname" value="<?= $yourname?>" id="name inputError1" placeholder="Enter name" required="required" />
+								<label for="subject">Email</label>
 								<input type="email" name="email" value="<?= $email?>" id="email" placeholder="Enter email" required="required" />
 								<label for="subject">Telephon Number</label>
 								<input type="telnum" name="telnum" value="<?= $telnum?>" id="telnum" placeholder="Enter phone number" required="required" />

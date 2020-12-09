@@ -1,3 +1,6 @@
+<?php 
+$form_location= base_url().'Search/search_resalt'; 
+?>
 <div class="col-sm-4">
     <div class="header-top">
         <ul>
@@ -5,9 +8,9 @@
             <li class="lh-50">
 
                 <div class="header-bottom-search header-top-downx header-top-hover lh-35">
-                    <form class="header-search-box" action="#" method="POST">
+                    <form class="header-search-box" action="<?= $form_location ?>" method="POST">
                         <div>
-                            <input type="text" value="" placeholder=" Search" autocomplete="off">
+                            <input type="text" name="searched_keyword" value="<?= $searched_keyword?>" placeholder=" Search" autocomplete="off">
                             <button class="btn btn-search" type="submit">
                                 <i class="zmdi zmdi-search"></i>
                             </button>

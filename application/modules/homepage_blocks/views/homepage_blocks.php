@@ -112,7 +112,7 @@ function get_theme($count)
 										<div class="panel-body">
 											<div class="coupon-info">
 
-												<div class="row">
+												<div class="row ">
 													<?php 
 													$block_data['block_id'] = $block_id;
 													$block_data['theme'] = $theme;

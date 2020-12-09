@@ -1,3 +1,4 @@
+<div class="offers-slides">
 <?php
 foreach ($query->result() as $row) {
 	$item_title = $row->item_title;
@@ -56,7 +57,7 @@ foreach ($query->result() as $row) {
 }
 
 ?>
-
+</div>
 <script type="text/javascript">
 	$('.js-addwish-b2').on('click', function(e) {
 		e.preventDefault();
