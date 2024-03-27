@@ -1,83 +1,81 @@
-###################
-This is E-commerce web app project using Codeigniter framework and HMVC Extension 
-###################
+# CI-SHOP
 
-**********************
-ADMIN
-**********************
-localhost/cishop/admin_login
+Welcome to the documentation for our E-commerce web app project developed using CodeIgniter framework v.3 and HMVC Extension. This project aims to provide a comprehensive solution for building an online store,following best HMVC practices. leveraging the power and flexibility of CodeIgniter along with the modular structure facilitated by HMVC.
 
-username:admin
+## About The Project
 
-password;adminpass
+This E-Commerce Web App is designed to provide a seamless shopping experience, featuring a user-friendly interface, secure payment gateways, and an intuitive admin panel for easy management of products, orders, and customers.
+I use two free HTML template.
+- [Freak – Free Boutique eCommerce Template](https://freethemescloud.com/item/freak-free-boutique-ecommerce-template/) for Public Template and
+- [Bootstrap Metro Dashboard](http://jiji262.github.io/Bootstrap_Metro_Dashboard/) for admin Template. 
 
-###################
-What is CodeIgniter
-###################
+## Features
+- **User Authentication:** Secure user authentication system for **customers** and **administrators**.
+- **Product Management:** Easily manage products, including adding, editing, and removing them.
+- **Order Management:** Efficient order processing system for managing customer orders.
+- **Shopping Cart:** Seamless shopping experience with a fully functional shopping cart.
+- **Payment Integration:** Integration with Paypal popular payment gateways for secure transactions.
+- **Responsive Design:** Responsive design ensures optimal viewing experience across devices.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
 
-*******************
-Release Information
-*******************
+## Getting Started
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+### Prerequisites
 
-**************************
-Changelog and New Features
-**************************
+- PHP version 5.6 or newer is recommended.
+- MySQL 5.6 or higher
+- Composer
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+### Installation
 
-*******************
-Server Requirements
-*******************
+1. Clone the reporepositories
+   ```sh
+   git clone https://github.com/kingashuu/E-commerce-Project-in-ci.git
+ 
+2. Rename cloned folder to your Project-Name
+*for example like `"cishop"` *
 
-PHP version 5.6 or newer is recommended.
+3. Import the database schema located in 
+`database/schema.sql`
+rename schema.sql to `cishop.sql`
+4. Configure your environment and config.php file with your database credentials, write your Project-Name in config file 
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+``` $config['base_url'] = http://localhost/Project-Name/'; ```
 
-************
-Installation
-************
+### Usage
+To start the application, navigate to the project directory and open in code editer:
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+Now, access the application at 
+`http://localhost/'Project-Name'.`
 
-*******
-License
-*******
+to access administrators
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+`http://localhost/'Project-Name'/admin_login`
 
-*********
-Resources
-*********
+**username**:admin
+**password**:adminpass
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+### Contributing🚀
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
-***************
-Acknowledgement
-***************
+### License
+Distributed under the MIT License. See LICENSE for more information.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+### Contact
+- @ashuu4_real 
+- abekele76@gmail.com
+
+
+### Acknowledgements
+This project was based on 
+- A YouTube tutorial by [David Connelly](https://www.youtube.com/@davidconnelly/).
+- CodeIgniter 3 Framework
+- wiredesignz codeigniter modular extensions 
+#### 👍 Star the Project
+If you found this project useful, please consider giving it a star🌟. Your support is appreciated
