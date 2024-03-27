@@ -1,4 +1,8 @@
-# CI-SHOP
+<h1 align="center">
+	CI-SHOP 
+</h1>
+
+# E-commerce web app project using PHP CodeIgniter framework v.3 and HMVC modular Extension
 
 Welcome to the documentation for our E-commerce web app project developed using CodeIgniter framework v.3 and HMVC Extension. This project aims to provide a comprehensive solution for building an online store,following best HMVC practices. leveraging the power and flexibility of CodeIgniter along with the modular structure facilitated by HMVC.
 
